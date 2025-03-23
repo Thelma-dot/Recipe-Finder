@@ -1,22 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const SearchBar = ({ searchTerm, setSearchTerm, handleSearch }) => {
+const SearchBar = ({ onSearch }) => {
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (searchQuery.trim() !== '') {
+      onSearch(searchQuery);
+    }
+  };
+
   return (
-    <div className="flex justify-center my-8">
+    <form onSubmit={handleSubmit} className="flex items-center w-full max-w-lg mx-auto bg-gray-100 dark:bg-gray-800 p-2 rounded-full">
       <input
         type="text"
-        placeholder="Search recipes..."
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-        className="w-1/2 p-2 border rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+        placeholder="Search for recipes..."
+        value={searchQuery}
+        onChange={(e) => setSearchQuery(e.target.value)}
+        className="w-full p-2 rounded-l-full bg-transparent focus:outline-none text-black dark:text-white"
       />
       <button
-        onClick={handleSearch}
-        className="bg-blue-500 text-white px-4 py-2 rounded-r-lg hover:bg-blue-600"
+        type="submit"
+        className="bg-red-500 p-2 rounded-r-full hover:bg-red-600 transition"
+        aria-label="Search"
       >
-        Search
+        🔍
       </button>
-    </div>
+    </form>
   );
 };
 
