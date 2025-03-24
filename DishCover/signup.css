@@ -1,0 +1,86 @@
+.signup-box {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    width: 320px;
+  }
+  
+  .signup-box .logo {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .signup-box h2 {
+    margin-bottom: 5px;
+  }
+  
+  .signup-box p, .signup-box a {
+    color: #ccc;
+    font-size: 0.9rem;
+  }
+  
+  .signup-box a:hover {
+    color: #fff;
+  }
+  
+  .signup-box h3 {
+    margin: 20px 0;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    margin-bottom: 10px;
+  }
+  
+  .continue-btn {
+    padding: 10px 20px;
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    background-color: #ccc;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  
+  .continue-btn:hover {
+    background-color: #00bfff;
+    color: white;
+  }
+  
+  .terms {
+    font-size: 0.7rem;
+    color: #ccc;
+    margin-bottom: 15px;
+  }
+  
+  .divider {
+    margin: 15px 0;
+    font-size: 0.9rem;
+  }
+  
+  .google-btn, .apple-btn {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .google-btn:hover, .apple-btn:hover {
+    background-color: #eee;
+  }
+  
+  .bottom-link {
+    margin-top: 10px;
+    font-size: 0.8rem;
+  }
+  
