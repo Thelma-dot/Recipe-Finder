@@ -12,7 +12,10 @@
 <body>
   <!-- Header Section -->
   <header class="header">
-    <div class="logo">DishCover</div>
+    <div class="logo">
+      <h2><span class="red-text">Dish</span><span class="blue-text">Cover</span></h2>
+      </a>
+    </div>
     <nav class="nav">
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -20,12 +23,22 @@
         <li><a href="recipes.html">Recipes</a></li>
         <li><a href="#">Blogs</a></li>
         <li><a href="aboutus.html">About Us</a></li>
-        <li><a href="pages.html">Pages</a></li>
         <li><a href="contactus.html">Contact Us</a></li>
-        <li><a href="#"><span>&#128269;</span></a></li>
-        <li><button id="darkModeToggle">🌙</button></li>
-      </ul>
-    </nav>
+        <li><a href="login.html">Logout</a></li>
+        
+        </ul>
+      </nav>
+      <div class="searchbar flex">
+        <input type="checkbox" name="check-toggle" id="checkbox" hidden="">
+        <label for="checkbox" class="toggle">
+        <div class="toggle__circle"></div>
+      </label>
+      <i class="fa-solid fa-magnifying-glass"></i>
+           </div>
+           <div class="searchinput">
+          <input type="text" placeholder="Search Here...">
+          <i class="fa-solid fa-xmark"></i>
+           </div>
   </header>
 
   <!-- Hero Section -->
@@ -37,32 +50,7 @@
     </div>
   </section>
 
-  <!-- Categories Section -->
-  <section class="categories">
-    <h2>Categories</h2>
-    <div class="category-grid">
-      <div class="category-card">Staple Foods</div>
-      <div class="category-card">Soups</div>
-      <div class="category-card">Stew</div>
-      <div class="category-card">Rice Dishes</div>
-      <div class="category-card">Street Food</div>
-      <div class="category-card">Snacks</div>
-      <div class="category-card">Protein Sources</div>
-      <div class="category-card">Beverages</div>
-    </div>
-  </section>
-
-  <!-- Recipe Section -->
-  <section class="recipes">
-    <h2>Recipe</h2>
-    <div class="recipe-grid">
-      <div class="recipe-card">Jollof Rice</div>
-      <div class="recipe-card">Light Soup</div>
-      <div class="recipe-card">Woolley</div>
-      <div class="recipe-card">Groundnut Soup</div>
-      <div class="recipe-card">Kelewele</div>
-    </div>
-  </section>
+  
 
   <!-- Blogs Section -->
   <section class="blogs">
@@ -70,17 +58,48 @@
     <h2>Our Fresh Blogs</h2>
     <div class="blog-grid">
       <div class="blog-card">
-        <img src="blog1.jpg" alt="Blog 1">
-        <p>Blog post title 1</p>
+        <img src="images/blog1.jpg" alt="Blog 1">
+        <p>Wedding Events Cookies</p>
       </div>
       <div class="blog-card">
-        <img src="blog2.jpg" alt="Blog 2">
-        <p>Blog post title 2</p>
+        <img src="images/blog2.jpg" alt="Blog 2">
+        <p>Parties</p>
       </div>
       <div class="blog-card">
-        <img src="blog3.jpg" alt="Blog 3">
-        <p>Blog post title 3</p>
+        <img src="images/blog3.jpg" alt="Blog 3">
+        <p>Wedding Events</p>
       </div>
+    </div>
+  </section>
+
+
+  <section class="img" >
+    <div class="img-cards">
+      <img src="images/ampesi-kontomire.jpg" alt="ampesi-kontomire">
+    </div>
+    <div class="img-cards">
+      <img src="images/ga-kenkey.jpg" alt="ga-kenkey">
+    </div>
+      <div class="img-cards">
+      <img src="images/fufu-light-soup.jpg" alt="fufu-light-soup">
+    </div>
+      <div class="img-cards">
+      <img src="images/waakye.jpg" alt="waakye">
+    </div>
+      <div class="img-cards">
+      <img src="images/toozafi.jpg" alt="toozafi">
+    </div>
+      <div class="img-cards">
+        <img src="images/fante_fante_stew.jpg" alt="fante_fante_stew">
+    </div>
+    <div class="img-cards">
+      <img src="images/drink.jpg" alt="drink">
+    </div>
+    <div class="img-cards">
+      <img src="images/pito.jpg" alt="pito">
+    </div>
+    <div class="img-cards">
+      <img src="images/sausage.jpg" alt="sausage">
     </div>
   </section>
 
@@ -92,7 +111,23 @@
         <p>I create unique, twist-filled recipes daily
             and share engaging blog posts with fun 
            kitchen ideas.</p>
-        <div class="social-icons">[Social Icons]</div>
+           <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <img src="images/facebook-icon.svg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <img src="images/twitter-icon.svg" alt="Twitter">
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <img src="images/linkedin-icon.svg" alt="Linkedin">
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+              <img src="images/youtube-icon.svg" alt="Youtube">
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <img src="images/instagram-icon.svg" alt="Instagram">
+            </a>
+          </div>
       </div>
       <div class="footer-links">
         <h4>Quick Link</h4>
