@@ -1,16 +1,59 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  background: url('./images/login-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  position: relative;
+}
+.top-buttons {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.red-text {
+  color: red;
+}
+
+.blue-text {
+  color: #00bfff;
+}
+
+
+.btn {
+  margin: 0 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
 .signup-box {
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 40px;
+    padding: 34px;
     border-radius: 10px;
     text-align: center;
     color: white;
     width: 320px;
   }
   
-  .signup-box .logo {
-    width: 50px;
-    margin-bottom: 10px;
-  }
+
   
   .signup-box h2 {
     margin-bottom: 5px;
@@ -28,7 +71,22 @@
   .signup-box h3 {
     margin: 20px 0;
   }
-  
+  .input-group {
+    margin: 15px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 0;
+  width: 100%;
+  }
+
+  .input-group i {
+    font-size: 18px;
+    color: gray;
+    padding: 0;
+    
+  }
   .input-group input {
     width: 100%;
     padding: 10px;
@@ -43,13 +101,13 @@
     width: 100%;
     border: none;
     border-radius: 20px;
-    background-color: #ccc;
+    background-color: rgba(255, 255, 255, 0.7);
     cursor: pointer;
-    margin-bottom: 15px;
+    margin-bottom: 0;
   }
   
   .continue-btn:hover {
-    background-color: #00bfff;
+    background-color: rgba(255, 255, 255, 0.9);
     color: white;
   }
   
@@ -63,24 +121,61 @@
     margin: 15px 0;
     font-size: 0.9rem;
   }
-  
-  .google-btn, .apple-btn {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: none;
-    border-radius: 20px;
-    background-color: white;
-    color: black;
-    cursor: pointer;
+
+  .social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
   }
   
-  .google-btn:hover, .apple-btn:hover {
-    background-color: #eee;
-  }
+  /* Google Sign-In Button */
+.g_id_signin {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+/* Google Button Styling */
+.g_id_signin iframe {
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
   
-  .bottom-link {
-    margin-top: 10px;
-    font-size: 0.8rem;
-  }
-  
+.google-btn, .apple-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.google-btn {
+  background-color: #db4437;
+  color: white;
+}
+
+.apple-btn {
+  background-color: black;
+  color: white;
+}
+
+.google-btn i, .apple-btn i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.google-btn:hover {
+  background-color: #c1351d;
+}
+
+.apple-btn:hover {
+  background-color: #333;
+}
+
+.bottom-link {
+  margin-top: 10px;
+  font-size: 0.8rem;
+}
