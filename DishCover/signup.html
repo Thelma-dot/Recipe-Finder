@@ -1,47 +1,63 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DishCover | Sign Up</title>
-  <link rel="stylesheet" href="css/signup.css" />
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script> 
+  <link rel="stylesheet" href="signup.css">
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 <body>
 
   <div class="background">
     <!-- Top Right Buttons -->
     <div class="top-buttons">
-      <button class="btn">Sign In</button>
-      <button class="btn">Sign Up</button>
+      <a href="login.html"><button class="btn">Sign In</button></a>
+<a href="signup.html"><button class="btn">Sign Up</button></a>
+
     </div>
 
     <!-- Sign Up Box -->
     <div class="signup-box">
-      <img src="images/logo.png" alt="DishCover Logo" class="logo" />
-      <h2><span style="color: red;">Dish</span><span style="color: #00bfff;">Cover</span></h2>
-      <p>Have an account? <a href="#">Login</a></p>
+      <h2><span class="red-text">Dish</span><span class="blue-text">Cover</span></h2>
       <h3>Sign Up</h3>
 
       <form>
         <div class="input-group">
+          <i class="fa-solid fa-user"></i>
+          <input type="text" id="username" placeholder="Username" required />
+        </div>
+        <div class="input-group">
+          <i class="fa-solid fa-envelope"></i>
           <input type="email" placeholder="Email" required />
         </div>
-        <button type="submit" class="continue-btn">Continue</button>
+        <div class="input-group">
+          <i class="fa-solid fa-lock"></i>
+          <input type="password" id="password" placeholder="Password" required />
+        </div>
+        <button type="submit" class="continue-btn">Sign Up</button>
 
         <p class="terms">By clicking Create account, you agree to DishCover’s privacy notice, T&Cs and to receive offers, news and updates.</p>
 
         <div class="divider">OR</div>
 
-        <button class="google-btn">Sign up with Google</button>
-        <button class="apple-btn">Sign up with Apple</button>
+        <div class="social-login">
+          <div id="g_id_onload" data-client_id="59407179024-j64bcusuqip10ioj2bc5divvlgfrirns.apps.googleusercontent.com" data-callback="handleGoogleSignIn"></div>
+          <div class="g_id_signin" data-type="standard"></div>
+        
+          <button class="apple-btn" onclick="signInWithApple()">
+            <i class="fa-brands fa-apple"></i> Sign in with Apple
+          </button>
+        </div>
 
-        <p class="bottom-link">Already have an account? <a href="#">Log in</a></p>
+        <p class="bottom-link">Already have an account? <a href="login.html">Log in</a></p>
       </form>
     </div>
 
   </div>
 
-  <script src="js/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
