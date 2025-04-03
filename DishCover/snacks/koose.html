@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DishCover</title>
+  <link rel="icon" type="image/png" href="/DishCover/images/logo.png">
+  <link rel="stylesheet" href="/DishCover/styles.css">
+</head>
+<body>
+
+     <!-- Header Section -->
+  <header class="header">
+    <div class="logo">
+      <h2><span class="red-text">Dish</span><span class="blue-text">Cover</span></h2>
+</div>
+    <nav class="nav">
+      <ul>
+        <li><a href="/DishCover/index.html">Home</a></li>
+
+        <li><a href="/DishCover/recipes.html">Recipes</a></li>
+        <li><a href="/DishCover/blogs.html">Blogs</a></li>
+        <li><a href="/DishCover/aboutus.html">About Us</a></li>
+        <li><a href="/DishCover/contactus.html">Contact Us</a></li>
+
+        </ul>
+        </nav>
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Search for a recipe...">
+          <button onclick="searchRecipe()">Search</button>
+      </div>
+      
+      <div id="results"></div> <!-- This will display the results -->
+      
+      
+      <div class="searchbar flex">
+        <input type="checkbox" name="check-toggle" id="checkbox" hidden="">
+        <label for="checkbox" class="toggle">
+        <div class="toggle__circle"></div>
+      </label>
+      <i class="fa-solid fa-magnifying-glass"></i>
+           </div> 
+      
+      </header>
+
+    <section>
+        <nav>
+            <a href="/DishCover/index.html">Home</a>
+            <a href="/DishCover/recipes.html">All Recipes</a>
+        </nav>
+    </section>
+
+    <main class="recipe-detail">
+        <h1>Koose</h1>
+        <img src="/DishCover/images/akara.jpg" alt="Koose">
+        
+        <section class="recipe-info">
+            <h2>About This Recipe</h2>
+            <p>Koose (also known as 'Akara' in some regions) is a delicious Ghanaian fritter made from blended black-eyed beans, seasoned with onions, pepper, and spices, then deep-fried until golden brown and crispy. It's a popular street food and can be enjoyed with porridge or as a side dish.</p>
+        </section>
+        
+        <section class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>2 cups dried black-eyed beans</li>
+                <li>1 medium onion, chopped</li>
+                <li>1-2 fresh chilies (adjust to taste)</li>
+                <li>1 teaspoon ground pepper (optional)</li>
+                <li>1 teaspoon ginger, grated (optional)</li>
+                <li>1 tablespoon all-purpose flour (optional, for binding)</li>
+                <li>Salt, to taste</li>
+                <li>Vegetable oil, for frying</li>
+            </ul>
+        </section>
+        
+        <section class="instructions">
+            <h2>Instructions</h2>
+            <ol>
+                <li>Soak the dried black-eyed beans in water overnight or for at least 4-6 hours to soften.</li>
+                <li>Drain and peel the beans by rubbing them between your hands or using a food processor to remove the skins.</li>
+                <li>Blend the peeled beans with onions, fresh chilies, ginger (if using), and a little water until you get a smooth, thick batter.</li>
+                <li>Transfer the batter to a bowl and stir in the ground pepper and salt to taste. If the batter is too runny, add a tablespoon of flour to help bind it.</li>
+                <li>Heat vegetable oil in a deep frying pan over medium-high heat.</li>
+                <li>Using a spoon or your hands, drop spoonfuls of the batter into the hot oil. Fry in batches, turning the Koose until golden brown and crispy, about 3-4 minutes per side.</li>
+                <li>Remove from the oil and drain on paper towels to remove excess oil.</li>
+                <li>Serve the Koose hot, either with porridge, as a snack, or with a side of spicy pepper sauce.</li>
+            </ol>
+        </section>
+        
+        
+        
+
+        <!-- Embedded YouTube Video -->
+        <section class="video">
+            <h2>Watch How to Make Koose</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/5Xzm_O7-hko?si=NUryyC5RFSWQzjb9" 
+                title="Koose Recipe Video" frameborder="0" allowfullscreen>
+            </iframe>
+        </section>
+
+        <a href="/DishCover/recipes.html" class="back-link">← Back to Recipes</a>
+    </main>
+
+    <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-sections">
+      <div class="footer-about">
+        <h4>About Us</h4>
+        <p>I create unique, twist-filled recipes daily
+            and share engaging blog posts with fun 
+           kitchen ideas.</p>
+           <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <img src="/DishCover/images/facebook-icon.svg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <img src="/DishCover/images/twitter-icon.svg" alt="Twitter">
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <img src="/DishCover/images/linkedin-icon.svg" alt="Linkedin">
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+              <img src="/DishCover/images/youtube-icon.svg" alt="Youtube">
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <img src="/DishCover/images/instagram-icon.svg" alt="Instagram">
+            </a>
+          </div>
+          
+      </div>
+      <div class="footer-links">
+        <h4>Quick Link</h4>
+        <ul>
+        <li><a href="term&condition.html.html">Term & Condition</a></li>
+        <li><a href="Advancedsearch.html">Advanced Search</a></li>
+        <li><a href="privacypolicy.html">Privacy Policy</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+          </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Info</h4>
+        <p>Location: Tema,Afienya</p>
+        <p>Email: info@dishcover.com</p>
+        <p>Phone: +233595634868</p>
+      </div>
+      <div class="footer-subscribe">
+        <h4>Subscribe</h4>
+        <p>Subscribe to our mailing list and get updates 
+            to your email box </p>
+        <input type="email" placeholder="Your email">
+        <button>Subscribe</button>
+        
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>2025 &copy; DishCover. All Rights Reserved | Designed by Thelma Buabeng</p>
+    </div>
+  </footer>
+  <script src="/DishCover/script.js"></script>
+  <script src="/DishCover/explore.js"></script>
+
+</body>
+</html>

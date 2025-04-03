@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DishCover</title>
+  <link rel="icon" type="image/png" href="/DishCover/images/logo.png">
+  <link rel="stylesheet" href="/DishCover/styles.css">
+</head>
+<body>
+
+     <!-- Header Section -->
+  <header class="header">
+    <div class="logo">
+      <h2><span class="red-text">Dish</span><span class="blue-text">Cover</span></h2>
+</div>
+    <nav class="nav">
+      <ul>
+        <li><a href="/DishCover/index.html">Home</a></li>
+
+        <li><a href="/DishCover/recipes.html">Recipes</a></li>
+        <li><a href="/DishCover/blogs.html">Blogs</a></li>
+        <li><a href="/DishCover/aboutus.html">About Us</a></li>
+        <li><a href="/DishCover/contactus.html">Contact Us</a></li>
+
+        </ul>
+        </nav>
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Search for a recipe...">
+          <button onclick="searchRecipe()">Search</button>
+      </div>
+      
+      <div id="results"></div> <!-- This will display the results -->
+      
+      
+      <div class="searchbar flex">
+        <input type="checkbox" name="check-toggle" id="checkbox" hidden="">
+        <label for="checkbox" class="toggle">
+        <div class="toggle__circle"></div>
+      </label>
+      <i class="fa-solid fa-magnifying-glass"></i>
+           </div> 
+      
+      </header>
+
+    <section>
+        <nav>
+            <a href="/DishCover/index.html">Home</a>
+            <a href="/DishCover/recipes.html">All Recipes</a>
+        </nav>
+    </section>
+
+    <main class="recipe-detail">
+        <h1>Kosua ne Meko</h1>
+        <img src="/DishCover/images/kosua.jpg" alt="Kosua ne Meko">
+        
+        <section class="recipe-info">
+            <h2>About This Recipe</h2>
+            <p>Kosua ne Meko is a simple but delicious Ghanaian dish made from hard-boiled eggs served with a spicy, savory tomato and pepper sauce. It’s a common breakfast or light meal, perfect for pairing with rice or plantains.</p>
+        </section>
+        
+        <section class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>4-6 large eggs</li>
+                <li>2 medium-sized tomatoes, chopped</li>
+                <li>1 medium onion, chopped</li>
+                <li>1-2 fresh chilies (adjust to taste)</li>
+                <li>1 tablespoon tomato paste (optional, for richer color)</li>
+                <li>1 tablespoon vegetable oil</li>
+                <li>1 teaspoon ground pepper (optional)</li>
+                <li>Salt, to taste</li>
+                <li>1/2 teaspoon curry powder (optional, for flavor)</li>
+                <li>1/2 teaspoon dried thyme (optional, for aroma)</li>
+            </ul>
+        </section>
+        
+        <section class="instructions">
+            <h2>Instructions</h2>
+            <ol>
+                <li>Hard-boil the eggs by placing them in a pot of water and boiling for about 10-12 minutes. Once cooked, peel and set aside.</li>
+                <li>Heat vegetable oil in a pan over medium heat.</li>
+                <li>Add the chopped onions to the pan and sauté for 2-3 minutes, or until they are soft and translucent.</li>
+                <li>Add the chopped tomatoes and fresh chilies to the pan and cook, stirring occasionally, for about 5-7 minutes until the tomatoes break down and form a sauce.</li>
+                <li>If desired, add tomato paste, ground pepper, curry powder, and dried thyme, and cook for another 2-3 minutes to enhance the flavors.</li>
+                <li>Season the sauce with salt to taste, and let it simmer for a couple of minutes to thicken.</li>
+                <li>Cut the hard-boiled eggs into halves or quarters and gently add them to the sauce. Stir carefully to coat the eggs in the sauce.</li>
+                <li>Let the eggs simmer in the sauce for an additional 3-5 minutes to absorb the flavors.</li>
+                <li>Serve the Kosua ne Meko with rice, fried plantains, or any starch of your choice.</li>
+            </ol>
+        </section>
+        
+        
+        
+
+        <!-- Embedded YouTube Video -->
+        <section class="video">
+            <h2>Watch How to Make Kosua ne Meko</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/cNkW4rCOoPY?si=r_4EbgR0eOrn6ny3" 
+                title="Kosua ne Meko Recipe Video" frameborder="0" allowfullscreen>
+            </iframe>
+        </section>
+
+        <a href="/DishCover/recipes.html" class="back-link">← Back to Recipes</a>
+    </main>
+
+    <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-sections">
+      <div class="footer-about">
+        <h4>About Us</h4>
+        <p>I create unique, twist-filled recipes daily
+            and share engaging blog posts with fun 
+           kitchen ideas.</p>
+           <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <img src="/DishCover/images/facebook-icon.svg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <img src="/DishCover/images/twitter-icon.svg" alt="Twitter">
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <img src="/DishCover/images/linkedin-icon.svg" alt="Linkedin">
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+              <img src="/DishCover/images/youtube-icon.svg" alt="Youtube">
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <img src="/DishCover/images/instagram-icon.svg" alt="Instagram">
+            </a>
+          </div>
+          
+      </div>
+      <div class="footer-links">
+        <h4>Quick Link</h4>
+        <ul>
+        <li><a href="term&condition.html.html">Term & Condition</a></li>
+        <li><a href="Advancedsearch.html">Advanced Search</a></li>
+        <li><a href="privacypolicy.html">Privacy Policy</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+          </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Info</h4>
+        <p>Location: Tema,Afienya</p>
+        <p>Email: info@dishcover.com</p>
+        <p>Phone: +233595634868</p>
+      </div>
+      <div class="footer-subscribe">
+        <h4>Subscribe</h4>
+        <p>Subscribe to our mailing list and get updates 
+            to your email box </p>
+        <input type="email" placeholder="Your email">
+        <button>Subscribe</button>
+        
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>2025 &copy; DishCover. All Rights Reserved | Designed by Thelma Buabeng</p>
+    </div>
+  </footer>
+  <script src="/DishCover/script.js"></script>
+  <script src="/DishCover/explore.js"></script>
+
+</body>
+</html>
