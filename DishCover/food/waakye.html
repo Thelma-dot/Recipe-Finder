@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DishCover</title>
+  <link rel="icon" type="image/png" href="/dishcover/images/logo.png">
+  <link rel="stylesheet" href="/dishcover/styles.css">
+</head>
+<body>
+
+     <!-- Header Section -->
+  <header class="header">
+    <div class="logo">
+      <h2><span class="red-text">Dish</span><span class="blue-text">Cover</span></h2>
+</div>
+    <nav class="nav">
+      <ul>
+        <li><a href="/dishcover/index.html">Home</a></li>
+        
+        <li><a href="/dishcover/recipes.html">Recipes</a></li>
+        <li><a href="/dishcover/blogs.html">Blogs</a></li>
+        <li><a href="/dishcover/aboutus.html">About Us</a></li>
+        <li><a href="/dishcover/contactus.html">Contact Us</a></li>
+        
+        </ul>
+        </nav>
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Search for a recipe...">
+          <button onclick="searchRecipe()">Search</button>
+      </div>
+      
+      <div id="results"></div> <!-- This will display the results -->
+      
+      
+      <div class="searchbar flex">
+        <input type="checkbox" name="check-toggle" id="checkbox" hidden="">
+        <label for="checkbox" class="toggle">
+        <div class="toggle__circle"></div>
+      </label>
+      <i class="fa-solid fa-magnifying-glass"></i>
+           </div> 
+      
+      </header>
+
+    <section>
+        <nav>
+            <a href="/dishcover/index.html">Home</a>
+            <a href="/dishcover/recipes.html">All Recipes</a>
+        </nav>
+    </section>
+
+    <main class="recipe-detail">
+        <h1>Waakye</h1>
+        <img src="/dishcover/images/waakye.jpg" alt="Ga Kenkey">
+        
+        <section class="recipe-info">
+            <h2>About This Recipe</h2>
+            <p>Waakye is a traditional Ghanaian dish made from rice and beans, cooked together with millet leaves for a unique flavor and color. It is often served with fried plantains, boiled eggs, spaghetti, avocado, shito, and meat or fish.</p>
+        </section>
+        
+        <section class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>2 cups rice</li>
+                <li>1 cup black-eyed peas or red beans</li>
+                <li>5-6 dried millet leaves (optional, for color)</li>
+                <li>1 teaspoon baking soda (optional)</li>
+                <li>5 cups water</li>
+                <li>1 teaspoon salt</li>
+            </ul>
+            <h3>Optional Sides:</h3>
+            <ul>
+                <li>Fried plantains</li>
+                <li>Boiled eggs</li>
+                <li>Spaghetti</li>
+                <li>Avocado slices</li>
+                <li>Fried fish, beef, or chicken</li>
+                <li>Shito (black pepper sauce)</li>
+            </ul>
+        </section>
+        
+        <section class="instructions">
+            <h2>Instructions</h2>
+            <ol>
+                <li>Rinse the beans and soak them for a few hours or overnight.</li>
+                <li>In a pot, add the soaked beans and 4 cups of water.</li>
+                <li>Add the dried millet leaves (or baking soda) and boil for 30-40 minutes until the beans are tender.</li>
+                <li>Remove the millet leaves and add the rinsed rice to the pot.</li>
+                <li>Add salt and additional water if needed.</li>
+                <li>Stir well, cover the pot, and let the rice cook for 15-20 minutes on low heat.</li>
+                <li>Serve hot with fried plantains, boiled eggs, spaghetti, avocado, meat, fish, or shito.</li>
+            </ol>
+        </section>
+        
+
+        <!-- Embedded YouTube Video -->
+        <section class="video">
+            <h2>Watch How to Make Waakye</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pIuAG2eUlTM" 
+                title="Waakye Recipe Video" frameborder="0" allowfullscreen>
+            </iframe>
+        </section>
+
+        <a href="/dishcover/recipes.html" class="back-link">← Back to Recipes</a>
+    </main>
+
+    <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-sections">
+      <div class="footer-about">
+        <h4>About Us</h4>
+        <p>I create unique, twist-filled recipes daily
+            and share engaging blog posts with fun 
+           kitchen ideas.</p>
+           <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <img src="/dishcover/images/facebook-icon.svg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <img src="/dishcover/images/twitter-icon.svg" alt="Twitter">
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <img src="/dishcover/images/linkedin-icon.svg" alt="Linkedin">
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+              <img src="/dishcover/images/youtube-icon.svg" alt="Youtube">
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <img src="/dishcover/images/instagram-icon.svg" alt="Instagram">
+            </a>
+          </div>
+          
+      </div>
+      <div class="footer-links">
+        <h4>Quick Link</h4>
+        <ul>
+        <li><a href="term&condition.html.html">Term & Condition</a></li>
+        <li><a href="Advancedsearch.html">Advanced Search</a></li>
+        <li><a href="privacypolicy.html">Privacy Policy</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+          </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Info</h4>
+        <p>Location: Tema,Afienya</p>
+        <p>Email: info@dishcover.com</p>
+        <p>Phone: +233595634868</p>
+      </div>
+      <div class="footer-subscribe">
+        <h4>Subscribe</h4>
+        <p>Subscribe to our mailing list and get updates 
+            to your email box </p>
+        <input type="email" placeholder="Your email">
+        <button>Subscribe</button>
+        
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>2025 &copy; DishCover. All Rights Reserved | Designed by Thelma Buabeng</p>
+    </div>
+  </footer>
+  
+  <script src="/dishcover/script.js"></script>
+  <script src="/DishCover/explore.js"></script>
+
+</body>
+</html>

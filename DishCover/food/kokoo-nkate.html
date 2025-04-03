@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DishCover</title>
+  <link rel="icon" type="image/png" href="/dishcover/images/logo.png">
+  <link rel="stylesheet" href="/dishcover/styles.css">
+</head>
+<body>
+
+     <!-- Header Section -->
+  <header class="header">
+    <div class="logo">
+      <h2><span class="red-text">Dish</span><span class="blue-text">Cover</span></h2>
+</div>
+    <nav class="nav">
+      <ul>
+        <li><a href="/dishcover/index.html">Home</a></li>
+        
+        <li><a href="/dishcover/recipes.html">Recipes</a></li>
+        <li><a href="/dishcover/blogs.html">Blogs</a></li>
+        <li><a href="/dishcover/aboutus.html">About Us</a></li>
+        <li><a href="/dishcover/contactus.html">Contact Us</a></li>
+        
+        </ul>
+        </nav>
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Search for a recipe...">
+          <button onclick="searchRecipe()">Search</button>
+      </div>
+      
+      <div id="results"></div> <!-- This will display the results -->
+      
+      
+      <div class="searchbar flex">
+        <input type="checkbox" name="check-toggle" id="checkbox" hidden="">
+        <label for="checkbox" class="toggle">
+        <div class="toggle__circle"></div>
+      </label>
+      <i class="fa-solid fa-magnifying-glass"></i>
+           </div> 
+      
+      </header>
+
+    <section>
+        <nav>
+            <a href="/dishcover/index.html">Home</a>
+            <a href="/dishcover/recipes.html">All Recipes</a>
+        </nav>
+    </section>
+
+    <main class="recipe-detail">
+        <h1>Kokoo ne Nkate</h1>
+        <img src="/dishcover/images/beverages.jpg" alt="Kokoo ne Nkate">
+        
+        <section class="recipe-info">
+          <h2>About This Recipe</h2>
+          <p>Hausa Koko is a popular Ghanaian spiced millet porridge, often enjoyed as a breakfast dish. It is best served with roasted peanuts (Nkate) or Koose (bean cakes).</p>
+      </section>
+      
+      <section class="ingredients">
+          <h2>Ingredients for Hausa Koko</h2>
+          <ul>
+              <li>1 cup millet flour</li>
+              <li>4 cups water</li>
+              <li>1/2 teaspoon cloves (powdered or whole)</li>
+              <li>1/2 teaspoon dried ginger powder (or fresh ginger, grated)</li>
+              <li>1/2 teaspoon black pepper</li>
+              <li>1/4 teaspoon salt</li>
+              <li>1/4 cup sugar (or to taste)</li>
+          </ul>
+      
+          <h2>Ingredients for Nkate (Roasted Peanuts)</h2>
+          <ul>
+              <li>1 cup raw peanuts (with or without skin)</li>
+              <li>1/2 teaspoon salt</li>
+              <li>1/2 teaspoon water (for roasting)</li>
+          </ul>
+      </section>
+      
+      <section class="instructions">
+          <h2>Instructions for Hausa Koko</h2>
+          <ol>
+              <li>In a bowl, mix the millet flour with 1 cup of water to form a smooth paste.</li>
+              <li>In a pot, bring 3 cups of water to a boil.</li>
+              <li>Add cloves, ginger, black pepper, and salt to the boiling water.</li>
+              <li>Slowly pour the millet mixture into the boiling water while stirring continuously.</li>
+              <li>Keep stirring to prevent lumps and let it cook for about 10–15 minutes until thick and smooth.</li>
+              <li>Add sugar to taste and serve hot.</li>
+          </ol>
+      
+          <h2>Instructions for Roasted Peanuts (Nkate)</h2>
+          <ol>
+              <li>Preheat a pan over medium heat.</li>
+              <li>In a bowl, mix the raw peanuts with a little water and salt.</li>
+              <li>Spread the peanuts in the pan and roast, stirring occasionally, for about 10–15 minutes until golden brown.</li>
+              <li>Let the peanuts cool before serving.</li>
+              <li>Serve the Hausa Koko with roasted peanuts on the side.</li>
+          </ol>
+      </section>
+      
+        
+        
+
+        <!-- Embedded YouTube Video -->
+        <section class="video">
+            <h2>Watch How to Make Kokoo ne Nkate</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/nYup44EWkEg?si=cWBziuf2UFWwkWCp" 
+                title="Kokoo ne Nkate Recipe Video" frameborder="0" allowfullscreen>
+            </iframe>
+        </section>
+
+        <a href="/dishcover/recipes.html" class="back-link">← Back to Recipes</a>
+    </main>
+
+    <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-sections">
+      <div class="footer-about">
+        <h4>About Us</h4>
+        <p>I create unique, twist-filled recipes daily
+            and share engaging blog posts with fun 
+           kitchen ideas.</p>
+           <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <img src="/dishcover/images/facebook-icon.svg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <img src="/dishcover/images/twitter-icon.svg" alt="Twitter">
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <img src="/dishcover/images/linkedin-icon.svg" alt="Linkedin">
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+              <img src="/dishcover/images/youtube-icon.svg" alt="Youtube">
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <img src="/dishcover/images/instagram-icon.svg" alt="Instagram">
+            </a>
+          </div>
+          
+      </div>
+      <div class="footer-links">
+        <h4>Quick Link</h4>
+        <ul>
+        <li><a href="term&condition.html.html">Term & Condition</a></li>
+        <li><a href="Advancedsearch.html">Advanced Search</a></li>
+        <li><a href="privacypolicy.html">Privacy Policy</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+          </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Info</h4>
+        <p>Location: Tema,Afienya</p>
+        <p>Email: info@dishcover.com</p>
+        <p>Phone: +233595634868</p>
+      </div>
+      <div class="footer-subscribe">
+        <h4>Subscribe</h4>
+        <p>Subscribe to our mailing list and get updates 
+            to your email box </p>
+        <input type="email" placeholder="Your email">
+        <button>Subscribe</button>
+        
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>2025 &copy; DishCover. All Rights Reserved | Designed by Thelma Buabeng</p>
+    </div>
+  </footer>
+  <script src="/dishcover/script.js"></script>
+  <script src="/DishCover/explore.js"></script>
+
+</body>
+</html>

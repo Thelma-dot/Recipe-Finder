@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DishCover</title>
+  <link rel="icon" type="image/png" href="/dishcover/images/logo.png">
+  <link rel="stylesheet" href="/dishcover/styles.css">
+</head>
+<body>
+
+     <!-- Header Section -->
+  <header class="header">
+    <div class="logo">
+      <h2><span class="red-text">Dish</span><span class="blue-text">Cover</span></h2>
+</div>
+    <nav class="nav">
+      <ul>
+        <li><a href="/dishcover/index.html">Home</a></li>
+        
+        <li><a href="/dishcover/recipes.html">Recipes</a></li>
+        <li><a href="/dishcover/blogs.html">Blogs</a></li>
+        <li><a href="/dishcover/aboutus.html">About Us</a></li>
+        <li><a href="/dishcover/contactus.html">Contact Us</a></li>
+
+        </ul>
+        </nav>
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Search for a recipe...">
+          <button onclick="searchRecipe()">Search</button>
+      </div>
+      
+      <div id="results"></div> <!-- This will display the results -->
+      
+      
+      <div class="searchbar flex">
+        <input type="checkbox" name="check-toggle" id="checkbox" hidden="">
+        <label for="checkbox" class="toggle">
+        <div class="toggle__circle"></div>
+      </label>
+      <i class="fa-solid fa-magnifying-glass"></i>
+           </div> 
+      
+      </header>
+
+    <section>
+        <nav>
+            <a href="/dishcover/index.html">Home</a>
+            <a href="/dishcover/recipes.html">All Recipes</a>
+        </nav>
+    </section>
+
+    <main class="recipe-detail">
+        <h1>Kokonte & Groundnut Soup</h1>
+        <img src="/dishcover/images/konkonte.jpg" alt="Zowey">
+        
+        <section class="recipe-info">
+            <h2>About This Recipe</h2>
+            <p>Kokonte, often referred to as "face of the earth," is a traditional Ghanaian dish made from dried cassava flour. It is commonly served with groundnut soup, which is a rich and flavorful peanut-based soup. Kokonte and groundnut soup are often enjoyed together as a hearty and satisfying meal.</p>
+        </section>
+        
+        <section class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>2 cups of dried cassava flour (Kokonte flour)</li>
+                <li>4 cups of water (for the Kokonte)</li>
+                <li>1 teaspoon salt (for the Kokonte)</li>
+                <li>1 pound chicken, beef, or goat meat (for the soup)</li>
+                <li>1 cup groundnut (peanuts), roasted and blended into paste</li>
+                <li>1 medium onion, chopped</li>
+                <li>2 medium tomatoes, chopped</li>
+                <li>1 tablespoon tomato paste</li>
+                <li>1-2 teaspoons ground pepper (or to taste)</li>
+                <li>1 tablespoon ground ginger (optional)</li>
+                <li>1 tablespoon ground garlic (optional)</li>
+                <li>2 tablespoons palm oil or vegetable oil</li>
+                <li>1 liter of water (for the soup)</li>
+                <li>Salt to taste</li>
+                <li>1 bouillon cube (optional, for flavor)</li>
+            </ul>
+        </section>
+        
+        <section class="instructions">
+            <h2>Instructions</h2>
+            <ol>
+                <li>To prepare the Kokonte, bring 4 cups of water to a boil in a pot. Add a pinch of salt to the water.</li>
+                <li>Gradually add the dried cassava flour (Kokonte flour) to the boiling water, stirring constantly to avoid lumps. Continue to stir until the mixture thickens and the Kokonte becomes smooth and firm. Let it cook for about 10-15 minutes, stirring occasionally. Once cooked, set aside.</li>
+                <li>For the groundnut soup, heat the palm oil or vegetable oil in a large pot over medium heat. Add the chopped onions and sauté until they are soft and translucent.</li>
+                <li>Add the chopped tomatoes, tomato paste, ground pepper, ginger, and garlic to the pot. Stir and cook for 5-7 minutes until the tomatoes soften and the mixture becomes fragrant.</li>
+                <li>Add the blended groundnut paste (peanut paste) to the pot and stir to combine. Cook for another 5 minutes to allow the peanuts to release their flavors.</li>
+                <li>Add the meat (chicken, beef, or goat meat) to the pot and pour in 1 liter of water. Stir well, ensuring the meat is fully submerged. If you are using a bouillon cube, add it to the pot now for extra flavor.</li>
+                <li>Cover the pot and simmer the soup for about 30-45 minutes, or until the meat is tender and the soup has thickened. Stir occasionally and check the seasoning, adding salt as needed.</li>
+                <li>Once the soup is ready and the flavors are well combined, serve it hot alongside the Kokonte.</li>
+                <li>To serve, place a portion of Kokonte on a plate and ladle the groundnut soup over it. Enjoy your meal!</li>
+            </ol>
+        </section>
+        
+        
+        
+        
+
+        <!-- Embedded YouTube Video -->
+        <section class="video">
+            <h2>Watch How to Make Kokonte & Groundnut Soup</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tUMgTn7mWKg?si=0J_sbwkkG_lMal0M" 
+                title="Kokonte & Groundnut Soup Recipe Video" frameborder="0" allowfullscreen>
+            </iframe>
+        </section>
+
+        <a href="/dishcover/recipes.html" class="back-link">← Back to Recipes</a>
+    </main>
+
+    <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-sections">
+      <div class="footer-about">
+        <h4>About Us</h4>
+        <p>I create unique, twist-filled recipes daily
+            and share engaging blog posts with fun 
+           kitchen ideas.</p>
+           <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <img src="/dishcover/images/facebook-icon.svg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <img src="/dishcover/images/twitter-icon.svg" alt="Twitter">
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <img src="/dishcover/images/linkedin-icon.svg" alt="Linkedin">
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+              <img src="/dishcover/images/youtube-icon.svg" alt="Youtube">
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <img src="/dishcover/images/instagram-icon.svg" alt="Instagram">
+            </a>
+          </div>
+          
+      </div>
+      <div class="footer-links">
+        <h4>Quick Link</h4>
+        <ul>
+        <li><a href="term&condition.html.html">Term & Condition</a></li>
+        <li><a href="Advancedsearch.html">Advanced Search</a></li>
+        <li><a href="privacypolicy.html">Privacy Policy</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+          </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Info</h4>
+        <p>Location: Tema,Afienya</p>
+        <p>Email: info@dishcover.com</p>
+        <p>Phone: +233595634868</p>
+      </div>
+      <div class="footer-subscribe">
+        <h4>Subscribe</h4>
+        <p>Subscribe to our mailing list and get updates 
+            to your email box </p>
+        <input type="email" placeholder="Your email">
+        <button>Subscribe</button>
+        
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>2025 &copy; DishCover. All Rights Reserved | Designed by Thelma Buabeng</p>
+    </div>
+  </footer>
+  <script src="/dishcover/script.js"></script>
+  <script src="/DishCover/explore.js"></script>
+
+</body>
+</html>

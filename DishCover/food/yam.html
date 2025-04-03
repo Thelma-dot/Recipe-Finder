@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DishCover</title>
+  <link rel="icon" type="image/png" href="/dishcover/images/logo.png">
+  <link rel="stylesheet" href="/dishcover/styles.css">
+</head>
+<body>
+
+     <!-- Header Section -->
+  <header class="header">
+    <div class="logo">
+      <h2><span class="red-text">Dish</span><span class="blue-text">Cover</span></h2>
+</div>
+    <nav class="nav">
+      <ul>
+        <li><a href="/dishcover/index.html">Home</a></li>
+        <li><a href="/dishcover/recipes.html">Recipes</a></li>
+        <li><a href="/dishcover/blogs.html">Blogs</a></li>
+        <li><a href="/dishcover/aboutus.html">About Us</a></li>
+        <li><a href="/dishcover/contactus.html">Contact Us</a></li>
+        
+        </ul>
+        </nav>
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Search for a recipe...">
+          <button onclick="searchRecipe()">Search</button>
+      </div>
+      
+      <div id="results"></div> <!-- This will display the results -->
+      
+      
+      <div class="searchbar flex">
+        <input type="checkbox" name="check-toggle" id="checkbox" hidden="">
+        <label for="checkbox" class="toggle">
+        <div class="toggle__circle"></div>
+      </label>
+      <i class="fa-solid fa-magnifying-glass"></i>
+           </div> 
+      
+      </header>
+
+    <section>
+        <nav>
+            <a href="/dishcover/index.html">Home</a>
+            <a href="/dishcover/recipes.html">All Recipes</a>
+        </nav>
+    </section>
+
+    <main class="recipe-detail">
+        <h1>Boiled Yam & Kontomire stew</h1>
+        <img src="/dishcover/images/yam.jpg" alt="yake">
+        
+        <section class="recipe-info">
+            <h2>About This Recipe</h2>
+            <p>Boiled yam with Kontomire (cocoyam leaves) stew is a popular Ghanaian dish made with tender boiled yam and a rich, flavorful spinach-like stew cooked with palm oil, onions, tomatoes, and smoked fish.</p>
+        </section>
+        
+        <section class="ingredients">
+            <h2>Ingredients</h2>
+            <h3>For the Boiled Yam:</h3>
+            <ul>
+                <li>1 medium-sized yam</li>
+                <li>1 teaspoon salt</li>
+                <li>Water (for boiling)</li>
+            </ul>
+        
+            <h3>For the Kontomire Stew:</h3>
+            <ul>
+                <li>2 cups kontomire (cocoyam leaves) or spinach, chopped</li>
+                <li>1/2 cup palm oil</li>
+                <li>1 large onion (chopped)</li>
+                <li>2 fresh tomatoes (chopped)</li>
+                <li>2 tablespoons tomato paste</li>
+                <li>1 teaspoon ground pepper (optional)</li>
+                <li>2 cloves garlic (minced)</li>
+                <li>1 teaspoon grated ginger</li>
+                <li>1 smoked fish or salted fish (deboned and flaked)</li>
+                <li>1/2 cup groundnut paste (optional, for a richer taste)</li>
+                <li>1 teaspoon shrimp powder (optional)</li>
+                <li>Salt to taste</li>
+            </ul>
+        </section>
+        
+        <section class="instructions">
+            <h2>Instructions</h2>
+        
+            <h3>Boiling the Yam:</h3>
+            <ol>
+                <li>Peel and cut the yam into large chunks.</li>
+                <li>Rinse and place in a pot, adding enough water to cover the yam.</li>
+                <li>Add salt and boil for 15-20 minutes until tender.</li>
+                <li>Drain the water and set the yam aside.</li>
+            </ol>
+        
+            <h3>Preparing the Kontomire Stew:</h3>
+            <ol>
+                <li>Heat palm oil in a saucepan over medium heat.</li>
+                <li>Add the chopped onions and sauté until soft.</li>
+                <li>Stir in garlic, ginger, and tomato paste, cooking for 2 minutes.</li>
+                <li>Add the chopped tomatoes and cook until soft.</li>
+                <li>Add the smoked or salted fish, stirring well.</li>
+                <li>Stir in the groundnut paste (if using) and shrimp powder.</li>
+                <li>Add the chopped kontomire leaves and stir until wilted.</li>
+                <li>Let the stew simmer for about 10 minutes, stirring occasionally.</li>
+                <li>Adjust seasoning with salt and pepper.</li>
+            </ol>
+        
+            <h3>Serving:</h3>
+            <ul>
+                <li>Serve the boiled yam hot with the Kontomire stew.</li>
+                <li>Enjoy with a side of boiled eggs or avocado for extra flavor.</li>
+            </ul>
+        </section>
+        
+      
+      
+        
+
+        <!-- Embedded YouTube Video -->
+        <section class="video">
+            <h2>Watch How to Make Boiled Yam & Kontomire stew</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_XwC6OI_aas?si=KORisz2HCv-uFewc" 
+                title="Boiled Yam & Kontomire stew Recipe Video" frameborder="0" allowfullscreen>
+            </iframe>
+        </section>
+
+        <a href="/dishcover/recipes.html" class="back-link">← Back to Recipes</a>
+    </main>
+
+    <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-sections">
+      <div class="footer-about">
+        <h4>About Us</h4>
+        <p>I create unique, twist-filled recipes daily
+            and share engaging blog posts with fun 
+           kitchen ideas.</p>
+           <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <img src="/dishcover/images/facebook-icon.svg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <img src="/dishcover/images/twitter-icon.svg" alt="Twitter">
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <img src="/dishcover/images/linkedin-icon.svg" alt="Linkedin">
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+              <img src="/dishcover/images/youtube-icon.svg" alt="Youtube">
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <img src="/dishcover/images/instagram-icon.svg" alt="Instagram">
+            </a>
+          </div>
+          
+      </div>
+      <div class="footer-links">
+        <h4>Quick Link</h4>
+        <ul>
+        <li><a href="term&condition.html.html">Term & Condition</a></li>
+        <li><a href="Advancedsearch.html">Advanced Search</a></li>
+        <li><a href="privacypolicy.html">Privacy Policy</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+          </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Info</h4>
+        <p>Location: Tema,Afienya</p>
+        <p>Email: info@dishcover.com</p>
+        <p>Phone: +233595634868</p>
+      </div>
+      <div class="footer-subscribe">
+        <h4>Subscribe</h4>
+        <p>Subscribe to our mailing list and get updates 
+            to your email box </p>
+        <input type="email" placeholder="Your email">
+        <button>Subscribe</button>
+        
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>2025 &copy; DishCover. All Rights Reserved | Designed by Thelma Buabeng</p>
+    </div>
+  </footer>
+  <script src="/dishcover/script.js"></script>
+  <script src="/DishCover/explore.js"></script>
+
+</body>
+</html>

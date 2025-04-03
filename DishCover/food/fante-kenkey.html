@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DishCover</title>
+  <link rel="icon" type="image/png" href="/dishcover/images/logo.png">
+  <link rel="stylesheet" href="/dishcover/styles.css">
+</head>
+<body>
+
+     <!-- Header Section -->
+  <header class="header">
+    <div class="logo">
+      <h2><span class="red-text">Dish</span><span class="blue-text">Cover</span></h2>
+</div>
+    <nav class="nav">
+      <ul>
+        <li><a href="/dishcover/index.html">Home</a></li>
+
+        <li><a href="/dishcover/recipes.html">Recipes</a></li>
+        <li><a href="/dishcover/blogs.html">Blogs</a></li>
+        <li><a href="/dishcover/aboutus.html">About Us</a></li>
+        <li><a href="/dishcover/contactus.html">Contact Us</a></li>
+
+        </ul>
+        </nav>
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Search for a recipe...">
+          <button onclick="searchRecipe()">Search</button>
+      </div>
+      
+      <div id="results"></div> <!-- This will display the results -->
+      
+      
+      <div class="searchbar flex">
+        <input type="checkbox" name="check-toggle" id="checkbox" hidden="">
+        <label for="checkbox" class="toggle">
+        <div class="toggle__circle"></div>
+      </label>
+      <i class="fa-solid fa-magnifying-glass"></i>
+           </div> 
+      
+      </header>
+
+    <section>
+        <nav>
+            <a href="/dishcover/index.html">Home</a>
+            <a href="/dishcover/recipes.html">All Recipes</a>
+        </nav>
+    </section>
+
+    <main class="recipe-detail">
+        <h1>Fante kenkey with fish & pepper</h1>
+        <img src="/dishcover/images/fante-kenkey.jpg" alt="fante-kenkey">
+        
+        <section class="recipe-info">
+            <h2>About This Recipe</h2>
+            <p>Fante Kenkey is a traditional Ghanaian dish made from fermented maize dough, typically served with fried or grilled fish and spicy pepper sauce. It is a staple in Fante communities and enjoyed across Ghana.</p>
+        </section>
+        
+        <section class="ingredients">
+            <h2>Ingredients</h2>
+        
+            <h3>For Fante Kenkey:</h3>
+            <ul>
+                <li>4 cups maize dough (fermented)</li>
+                <li>1 teaspoon salt</li>
+                <li>Water (as needed)</li>
+                <li>Banana leaves or corn husks (for wrapping)</li>
+            </ul>
+        
+            <h3>For Fried/Grilled Fish:</h3>
+            <ul>
+                <li>1 whole tilapia, mackerel, or any preferred fish</li>
+                <li>1 teaspoon salt</li>
+                <li>1 teaspoon black pepper</li>
+                <li>1 teaspoon ginger (grated)</li>
+                <li>1 teaspoon garlic (minced)</li>
+                <li>1 teaspoon lemon juice</li>
+                <li>Vegetable oil (for frying)</li>
+            </ul>
+        
+            <h3>For Spicy Pepper Sauce (Shito or Fresh Pepper):</h3>
+            <ul>
+                <li>4 fresh tomatoes</li>
+                <li>2 scotch bonnet peppers (or to taste)</li>
+                <li>1 medium onion</li>
+                <li>1 teaspoon shrimp powder (optional)</li>
+                <li>1/2 teaspoon salt</li>
+                <li>1 tablespoon vegetable or palm oil</li>
+            </ul>
+        </section>
+        
+        <section class="instructions">
+            <h2>Instructions</h2>
+        
+            <h3>Preparing Fante Kenkey:</h3>
+            <ol>
+                <li>In a bowl, mix the maize dough with salt and a little water until smooth.</li>
+                <li>Divide the dough into two portions.</li>
+                <li>Cook one portion in a pot over low heat, stirring continuously until thick.</li>
+                <li>Mix the cooked portion with the uncooked portion until well combined.</li>
+                <li>Shape the mixture into balls and wrap them in banana leaves or corn husks.</li>
+                <li>Place the wrapped kenkey in a large pot with water and steam for 3–4 hours.</li>
+                <li>Once firm, remove from heat and allow it to cool.</li>
+            </ol>
+        
+            <h3>Preparing Fried/Grilled Fish:</h3>
+            <ol>
+                <li>Clean the fish and make small cuts on the sides.</li>
+                <li>Rub with salt, black pepper, ginger, garlic, and lemon juice.</li>
+                <li>Let it marinate for 20–30 minutes.</li>
+                <li>For frying: Heat oil in a pan and fry the fish until golden brown.</li>
+                <li>For grilling: Place on a grill and cook, flipping occasionally, until fully cooked.</li>
+            </ol>
+        
+            <h3>Preparing Spicy Pepper Sauce:</h3>
+            <ol>
+                <li>Blend tomatoes, peppers, and onions into a smooth or slightly chunky paste.</li>
+                <li>Heat oil in a pan and sauté the mixture for 5–10 minutes.</li>
+                <li>Add shrimp powder and salt, and let it simmer.</li>
+                <li>Serve alongside the kenkey and fish.</li>
+            </ol>
+        </section>
+        
+        
+      
+      
+        
+
+        <!-- Embedded YouTube Video -->
+        <section class="video">
+            <h2>Watch How to Make Fante kenkey with fish & pepper</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/B62hEjEp43Y?si=O7xhqnJoOcNa-BKu" 
+                title="Fante kenkey with fish & pepper Recipe Video" frameborder="0" allowfullscreen>
+            </iframe>
+        </section>
+
+        <a href="/dishcover/recipes.html" class="back-link">← Back to Recipes</a>
+    </main>
+
+    <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-sections">
+      <div class="footer-about">
+        <h4>About Us</h4>
+        <p>I create unique, twist-filled recipes daily
+            and share engaging blog posts with fun 
+           kitchen ideas.</p>
+           <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <img src="/dishcover/images/facebook-icon.svg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <img src="/dishcover/images/twitter-icon.svg" alt="Twitter">
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <img src="/dishcover/images/linkedin-icon.svg" alt="Linkedin">
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+              <img src="/dishcover/images/youtube-icon.svg" alt="Youtube">
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <img src="/dishcover/images/instagram-icon.svg" alt="Instagram">
+            </a>
+          </div>
+          
+      </div>
+      <div class="footer-links">
+        <h4>Quick Link</h4>
+        <ul>
+        <li><a href="term&condition.html.html">Term & Condition</a></li>
+        <li><a href="Advancedsearch.html">Advanced Search</a></li>
+        <li><a href="privacypolicy.html">Privacy Policy</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+          </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Info</h4>
+        <p>Location: Tema,Afienya</p>
+        <p>Email: info@dishcover.com</p>
+        <p>Phone: +233595634868</p>
+      </div>
+      <div class="footer-subscribe">
+        <h4>Subscribe</h4>
+        <p>Subscribe to our mailing list and get updates 
+            to your email box </p>
+        <input type="email" placeholder="Your email">
+        <button>Subscribe</button>
+        
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>2025 &copy; DishCover. All Rights Reserved | Designed by Thelma Buabeng</p>
+    </div>
+  </footer>
+  <script src="/dishcover/script.js"></script>
+  <script src="/DishCover/explore.js"></script>
+
+</body>
+</html>

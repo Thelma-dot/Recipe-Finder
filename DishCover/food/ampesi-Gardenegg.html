@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DishCover</title>
+  <link rel="icon" type="image/png" href="/dishcover/images/logo.png">
+  <link rel="stylesheet" href="/dishcover/styles.css">
+</head>
+<body>
+
+     <!-- Header Section -->
+  <header class="header">
+    <div class="logo">
+      <h2><span class="red-text">Dish</span><span class="blue-text">Cover</span></h2>
+</div>
+    <nav class="nav">
+      <ul>
+        <li><a href="/dishcover/index.html">Home</a></li>
+        
+        <li><a href="/dishcover/recipes.html">Recipes</a></li>
+        <li><a href="/dishcover/blogs.html">Blogs</a></li>
+        <li><a href="/dishcover/aboutus.html">About Us</a></li>
+        <li><a href="/dishcover/contactus.html">Contact Us</a></li>
+
+        </ul>
+        </nav>
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Search for a recipe...">
+          <button onclick="searchRecipe()">Search</button>
+      </div>
+      
+      <div id="results"></div> <!-- This will display the results -->
+      
+      
+      <div class="searchbar flex">
+        <input type="checkbox" name="check-toggle" id="checkbox" hidden="">
+        <label for="checkbox" class="toggle">
+        <div class="toggle__circle"></div>
+      </label>
+      <i class="fa-solid fa-magnifying-glass"></i>
+           </div> 
+      
+      </header>
+
+    <section>
+        <nav>
+            <a href="/dishcover/index.html">Home</a>
+            <a href="/dishcover/recipes.html">All Recipes</a>
+        </nav>
+    </section>
+
+    <main class="recipe-detail">
+        <h1>Ampesi & Garden Egg Stew</h1>
+        <img src="/dishcover/images/ampesi-Gardenegg.jpg" alt="Ampesi & Garden Egg Stew">
+        
+        <section class="recipe-info">
+            <h2>About This Recipe</h2>
+            <p>Ampesi is a traditional Ghanaian dish made from boiled plantains, yam, or cocoyams, commonly served with a flavorful stew or sauce. In this recipe, Ampesi is paired with a spicy and savory Garden Egg Stew, which is made from garden eggs (African eggplant), tomatoes, and onions. This combination makes for a delicious and filling meal.</p>
+        </section>
+        
+        <section class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>4 medium-sized plantains (or yam, or cocoyam)</li>
+                <li>1 tablespoon salt (for boiling)</li>
+            </ul>
+                <h3>For the Garden Egg Stew</h3>
+            <ul>
+                <li>5-6 garden eggs (African eggplant), chopped</li>
+                <li>2 large tomatoes, chopped</li>
+                <li>1 medium onion, chopped</li>
+                <li>2 tablespoons vegetable oil (or palm oil for richer flavor)</li>
+                <li>1 tablespoon tomato paste</li>
+                <li>1 teaspoon ground pepper (or to taste)</li>
+                <li>1/2 teaspoon ground ginger (optional)</li>
+                <li>2 cloves of garlic, minced (optional)</li>
+                <li>1 tablespoon ground crayfish (optional, for authentic taste)</li>
+                <li>Salt to taste</li>
+                <li>1-2 bouillon cubes (optional, for flavor)</li>
+                <li>1/2 cup water (or as needed for desired consistency)</li>
+            </ul>
+        </section>
+        
+        <section class="instructions">
+            <h2>Instructions</h2>
+            <ol>
+                <li>To prepare the Ampesi, peel and cut the plantains (or yam or cocoyam) into medium-sized chunks. Place them in a pot, add water, and a pinch of salt, and bring to a boil. Cook for 15-20 minutes, or until tender. Drain and set aside.</li>
+                
+                <li>For the Garden Egg Stew, heat the vegetable oil (or palm oil) in a large pan over medium heat. Add the chopped onions and sauté for 2-3 minutes until they become soft and translucent.</li>
+                
+                <li>Add the chopped tomatoes, ground pepper, ginger, garlic (if using), and tomato paste. Stir well and cook for 5-7 minutes, allowing the tomatoes to break down and the flavors to meld together.</li>
+                
+                <li>Add the chopped garden eggs to the pan and stir to combine. Cook for another 5-7 minutes until the garden eggs soften. You can add a little water to help it cook down into a stew-like consistency.</li>
+                
+                <li>If using, add ground crayfish, bouillon cubes, and salt to taste. Stir and let the stew cook for another 5 minutes to ensure the seasoning is well incorporated.</li>
+                
+                <li>Once the stew has thickened and the garden eggs are soft, adjust the seasoning to taste. Remove from heat and serve hot alongside the boiled plantains (or yam or cocoyam) as your Ampesi meal.</li>
+            </ol>
+        </section>
+        
+        
+        
+        
+
+        <!-- Embedded YouTube Video -->
+        <section class="video">
+            <h2>Watch How to Make Ampesi & Garden Egg Stew</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_F28aWq77O8?si=v8-HB_FifQ6ZyTOV" 
+                title="Ampesi & Garden Egg Stew Recipe Video" frameborder="0" allowfullscreen>
+            </iframe>
+        </section>
+
+        <a href="/dishcover/recipes.html" class="back-link">← Back to Recipes</a>
+    </main>
+
+    <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-sections">
+      <div class="footer-about">
+        <h4>About Us</h4>
+        <p>I create unique, twist-filled recipes daily
+            and share engaging blog posts with fun 
+           kitchen ideas.</p>
+           <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <img src="/dishcover/images/facebook-icon.svg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <img src="/dishcover/images/twitter-icon.svg" alt="Twitter">
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <img src="/dishcover/images/linkedin-icon.svg" alt="Linkedin">
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+              <img src="/dishcover/images/youtube-icon.svg" alt="Youtube">
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <img src="/dishcover/images/instagram-icon.svg" alt="Instagram">
+            </a>
+          </div>
+          
+      </div>
+      <div class="footer-links">
+        <h4>Quick Link</h4>
+        <ul>
+        <li><a href="term&condition.html.html">Term & Condition</a></li>
+        <li><a href="Advancedsearch.html">Advanced Search</a></li>
+        <li><a href="privacypolicy.html">Privacy Policy</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+          </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Info</h4>
+        <p>Location: Tema,Afienya</p>
+        <p>Email: info@dishcover.com</p>
+        <p>Phone: +233595634868</p>
+      </div>
+      <div class="footer-subscribe">
+        <h4>Subscribe</h4>
+        <p>Subscribe to our mailing list and get updates 
+            to your email box </p>
+        <input type="email" placeholder="Your email">
+        <button>Subscribe</button>
+        
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>2025 &copy; DishCover. All Rights Reserved | Designed by Thelma Buabeng</p>
+    </div>
+  </footer>
+  <script src="/dishcover/script.js"></script>
+  <script src="/DishCover/explore.js"></script>
+
+</body>
+</html>
