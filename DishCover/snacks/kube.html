@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DishCover</title>
+  <link rel="icon" type="image/png" href="/DishCover/images/logo.png">
+  <link rel="stylesheet" href="/DishCover/styles.css">
+</head>
+<body>
+
+     <!-- Header Section -->
+  <header class="header">
+    <div class="logo">
+      <h2><span class="red-text">Dish</span><span class="blue-text">Cover</span></h2>
+</div>
+    <nav class="nav">
+      <ul>
+        <li>
+          <a href="/dishcover/index.html">
+            <img src="/dishcover/images/home.svg" alt="Home" width="24" height="24">
+          </a>
+        </li>
+
+        <li><a href="/DishCover/recipes.html">Recipes</a></li>
+        <li><a href="/DishCover/blogs.html">Blogs</a></li>
+        <li><a href="/DishCover/aboutus.html">About Us</a></li>
+        <li><a href="/DishCover/contactus.html">Contact Us</a></li>
+
+        </ul>
+        </nav>
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Search for a recipe...">
+          <button onclick="searchRecipe()">Search</button>
+      </div>
+      
+      <div id="results"></div> <!-- This will display the results -->
+      
+      
+      <div class="searchbar flex">
+        <input type="checkbox" name="check-toggle" id="checkbox" hidden="">
+        <label for="checkbox" class="toggle">
+        <div class="toggle__circle"></div>
+      </label>
+      <i class="fa-solid fa-magnifying-glass"></i>
+           </div> 
+      
+      </header>
+
+    <section>
+        <nav>
+            <a href="/DishCover/index.html">Home</a>
+            <a href="/DishCover/recipes.html">All Recipes</a>
+        </nav>
+    </section>
+
+    <main class="recipe-detail">
+        <h1>Kube Cake</h1>
+        <img src="/DishCover/images/kube.jpg" alt="Kube Cake">
+        
+        <section class="recipe-info">
+            <h2>About This Recipe</h2>
+            <p>Kube Cake is a delicious Ghanaian dessert made with rice flour, sugar, and coconut. It's soft, moist, and sweet, making it a perfect treat for any occasion.</p>
+        </section>
+        
+        <section class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>2 cups rice flour</li>
+                <li>1 cup sugar</li>
+                <li>1 cup coconut milk</li>
+                <li>1/2 teaspoon baking powder</li>
+                <li>1/4 teaspoon vanilla extract</li>
+                <li>1/2 cup grated coconut</li>
+                <li>1/4 teaspoon salt</li>
+                <li>1/2 cup water (or as needed)</li>
+            </ul>
+        </section>
+        
+        <section class="instructions">
+            <h2>Instructions</h2>
+            <ol>
+                <li>Preheat the oven to 350°F (175°C) and grease a baking pan.</li>
+                <li>In a large mixing bowl, combine the rice flour, sugar, baking powder, salt, and grated coconut.</li>
+                <li>Add the coconut milk, vanilla extract, and water. Stir until the batter is smooth.</li>
+                <li>Pour the batter into the prepared baking pan.</li>
+                <li>Bake for 30-35 minutes or until a toothpick inserted into the center comes out clean.</li>
+                <li>Allow the Kube Cake to cool before slicing and serving. Enjoy!</li>
+            </ol>
+        </section>
+        
+        
+        
+
+        <!-- Embedded YouTube Video -->
+        <section class="video">
+            <h2>Watch How to Make Kube Cake</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YeSU4SMaKGo?si=GzunNl8oXraTOC1K" 
+                title="Kube Cake Recipe Video" frameborder="0" allowfullscreen>
+            </iframe>
+        </section>
+
+        <a href="/DishCover/recipes.html" class="back-link">← Back to Recipes</a>
+    </main>
+
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-sections">
+    <div class="footer-about">
+      
+         <div class="social-icons">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <img src="/dishcover/images/facebook-icon.svg" alt="Facebook">
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <img src="/dishcover/images/twitter-icon.svg" alt="Twitter">
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <img src="/dishcover/images/linkedin-icon.svg" alt="Linkedin">
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+            <img src="/dishcover/images/youtube-icon.svg" alt="Youtube">
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <img src="/dishcover/images/instagram-icon.svg" alt="Instagram">
+          </a>
+        </div>
+        
+    </div>
+    <div class="footer-links">
+      <h4>Quick Link</h4>
+      <ul>
+      <li><a href="/dishcover/Advanced.html">Advanced Search</a></li>
+      <li><a href="/dishcover/contactus.html">Contact Us</a></li>
+        </ul>
+    </div>
+    
+    <div class="footer-subscribe">
+      <h4>Subscribe</h4>
+      <p>Subscribe to our mailing list and get updates 
+          to your email box </p>
+      <input type="email" placeholder="Your email">
+      <button>Subscribe</button>
+      
+    </div>
+  </div>
+  
+</footer>
+<footer>
+  <div class="footer-bottom">
+    <p>2025 &copy; DishCover. All Rights Reserved | Designed by Thelma Buabeng</p>
+  </div>
+</footer>
+
+  <script src="/DishCover/script.js"></script>
+  <script src="/DishCover/explore.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DishCover</title>
+  <link rel="icon" type="image/png" href="/dishcover/images/logo.png">
+  <link rel="stylesheet" href="/dishcover/styles.css">
+</head>
+<body>
+
+     <!-- Header Section -->
+  <header class="header">
+    <div class="logo">
+      <h2><span class="red-text">Dish</span><span class="blue-text">Cover</span></h2>
+</div>
+    <nav class="nav">
+      <ul>
+        <li>
+          <a href="/dishcover/index.html">
+            <img src="/dishcover/images/home.svg" alt="Home" width="24" height="24">
+          </a>
+        </li>
+
+        <li><a href="/dishcover/recipes.html">Recipes</a></li>
+        <li><a href="/dishcover/blogs.html">Blogs</a></li>
+        <li><a href="/dishcover/aboutus.html">About Us</a></li>
+        <li><a href="/dishcover/contactus.html">Contact Us</a></li>
+
+        </ul>
+        </nav>
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Search for a recipe...">
+          <button onclick="searchRecipe()">Search</button>
+      </div>
+      
+      <div id="results"></div> <!-- This will display the results -->
+      
+      
+      <div class="searchbar flex">
+        <input type="checkbox" name="check-toggle" id="checkbox" hidden="">
+        <label for="checkbox" class="toggle">
+        <div class="toggle__circle"></div>
+      </label>
+      <i class="fa-solid fa-magnifying-glass"></i>
+           </div> 
+      
+      </header>
+
+    <section>
+        <nav>
+            <a href="/dishcover/index.html">Home</a>
+            <a href="/dishcover/recipes.html">All Recipes</a>
+        </nav>
+    </section>
+
+    <main class="recipe-detail">
+        <h1>Egusi Soup with Riceballs</h1>
+        <img src="/dishcover/images/egusi.jpg" alt="Egusi">
+        
+        <section class="recipe-info">
+            <h2>About This Recipe</h2>
+            <p>Egusi Soup is a flavorful West African dish made with melon seeds, vegetables, and assorted meats. It is often paired with rice balls (Omo Tuo) in Ghana, creating a rich and satisfying meal.</p>
+        </section>
+        
+        <section class="ingredients">
+            <h2>Ingredients</h2>
+        
+            <h3>For Egusi Soup:</h3>
+            <ul>
+                <li>2 cups egusi (melon seeds), ground</li>
+                <li>1 pound meat (goat, beef, or chicken)</li>
+                <li>1/2 pound smoked fish (flaked)</li>
+                <li>1/2 cup palm oil</li>
+                <li>1 medium onion (chopped)</li>
+                <li>2 fresh tomatoes (blended)</li>
+                <li>2 tablespoons ground crayfish</li>
+                <li>1 teaspoon ginger (grated)</li>
+                <li>1 teaspoon garlic (minced)</li>
+                <li>2 scotch bonnet peppers (blended)</li>
+                <li>1 teaspoon salt (or to taste)</li>
+                <li>1 teaspoon shrimp seasoning (optional)</li>
+                <li>2 cups spinach or kontomire (cocoyam leaves), chopped</li>
+                <li>2 cups meat broth or water</li>
+            </ul>
+        
+            <h3>For Rice Balls (Omo Tuo):</h3>
+            <ul>
+                <li>2 cups rice (preferably short-grain or broken rice)</li>
+                <li>4 cups water</li>
+                <li>1/2 teaspoon salt (optional)</li>
+            </ul>
+        </section>
+        
+        <section class="instructions">
+            <h2>Instructions</h2>
+        
+            <h3>Preparing Egusi Soup:</h3>
+            <ol>
+                <li>In a pot, heat palm oil over medium heat.</li>
+                <li>Add chopped onions, garlic, and ginger. Sauté until fragrant.</li>
+                <li>Add blended tomatoes, pepper, and crayfish. Cook for 10 minutes until thick.</li>
+                <li>Mix ground egusi with a little water to form a thick paste, then add to the pot.</li>
+                <li>Stir and cook for another 5 minutes.</li>
+                <li>Add meat, smoked fish, and broth. Stir and let it simmer for 10 minutes.</li>
+                <li>Add chopped spinach or kontomire and cook for another 5 minutes.</li>
+                <li>Adjust salt and seasoning to taste.</li>
+            </ol>
+        
+            <h3>Preparing Rice Balls (Omo Tuo):</h3>
+            <ol>
+                <li>Wash the rice and add it to a pot with 4 cups of water.</li>
+                <li>Cook on low heat, stirring occasionally, until the rice becomes very soft.</li>
+                <li>Once fully cooked, mash the rice with a wooden spoon to form a sticky consistency.</li>
+                <li>Wet your hands with water and shape the mashed rice into smooth balls.</li>
+                <li>Serve hot with Egusi Soup.</li>
+            </ol>
+        </section>
+        
+        
+      
+      
+        
+
+        <!-- Embedded YouTube Video -->
+        <section class="video">
+            <h2>Watch How to Make Egusi Soup with Riceballs</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/SLxSksjC_0g?si=ulPlmn-JbCWWQmXw" 
+                title="Egusi Soup with Riceballs Recipe Video" frameborder="0" allowfullscreen>
+            </iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xZmfhQPvZU4?si=9WvgYK_i6u1RbzdV" 
+                title="Riceballs Recipe Video" frameborder="0" allowfullscreen>
+            </iframe>
+        </section>
+
+        <a href="/dishcover/recipes.html" class="back-link">← Back to Recipes</a>
+    </main>
+
+    <!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-sections">
+    <div class="footer-about">
+      
+         <div class="social-icons">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <img src="/dishcover/images/facebook-icon.svg" alt="Facebook">
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <img src="/dishcover/images/twitter-icon.svg" alt="Twitter">
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <img src="/dishcover/images/linkedin-icon.svg" alt="Linkedin">
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+            <img src="/dishcover/images/youtube-icon.svg" alt="Youtube">
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <img src="/dishcover/images/instagram-icon.svg" alt="Instagram">
+          </a>
+        </div>
+        
+    </div>
+    <div class="footer-links">
+      <h4>Quick Link</h4>
+      <ul>
+      <li><a href="/dishcover/Advanced.html">Advanced Search</a></li>
+      <li><a href="/dishcover/contactus.html">Contact Us</a></li>
+        </ul>
+    </div>
+    
+    <div class="footer-subscribe">
+      <h4>Subscribe</h4>
+      <p>Subscribe to our mailing list and get updates 
+          to your email box </p>
+      <input type="email" placeholder="Your email">
+      <button>Subscribe</button>
+      
+    </div>
+  </div>
+  
+</footer>
+<footer>
+  <div class="footer-bottom">
+    <p>2025 &copy; DishCover. All Rights Reserved | Designed by Thelma Buabeng</p>
+  </div>
+</footer>
+
+  <script src="/dishcover/script.js"></script>
+  <script src="/DishCover/explore.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DishCover</title>
+  <link rel="icon" type="image/png" href="/DishCover/images/logo.png">
+  <link rel="stylesheet" href="/DishCover/styles.css">
+</head>
+<body>
+
+     <!-- Header Section -->
+  <header class="header">
+    <div class="logo">
+      <h2><span class="red-text">Dish</span><span class="blue-text">Cover</span></h2>
+</div>
+    <nav class="nav">
+      <ul>
+        <li>
+          <a href="/dishcover/index.html">
+            <img src="/dishcover/images/home.svg" alt="Home" width="24" height="24">
+          </a>
+        </li>
+
+        <li><a href="/DishCover/recipes.html">Recipes</a></li>
+        <li><a href="/DishCover/blogs.html">Blogs</a></li>
+        <li><a href="/DishCover/aboutus.html">About Us</a></li>
+        <li><a href="/DishCover/contactus.html">Contact Us</a></li>
+
+        </ul>
+        </nav>
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Search for a recipe...">
+          <button onclick="searchRecipe()">Search</button>
+      </div>
+      
+      <div id="results"></div> <!-- This will display the results -->
+      
+      
+      <div class="searchbar flex">
+        <input type="checkbox" name="check-toggle" id="checkbox" hidden="">
+        <label for="checkbox" class="toggle">
+        <div class="toggle__circle"></div>
+      </label>
+      <i class="fa-solid fa-magnifying-glass"></i>
+           </div> 
+      
+      </header>
+
+    <section>
+        <nav>
+            <a href="/DishCover/index.html">Home</a>
+            <a href="/DishCover/recipes.html">All Recipes</a>
+        </nav>
+    </section>
+
+    <main class="recipe-detail">
+        <h1>Mpotompoto</h1>
+        <img src="/DishCover/images/yamporridge.jpg" alt="Mpotompoto">
+        
+        <section class="recipe-info">
+            <h2>About This Recipe</h2>
+            <p>Mpotompoto is a Ghanaian comfort food made from boiled yam that is mashed and served as a side dish with soup or stew. It's soft, creamy, and pairs well with a variety of stews or light soups, often enjoyed with meats or fish.</p>
+        </section>
+        
+        <section class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>4 medium-sized yams (preferably white yam)</li>
+                <li>1 tablespoon butter or margarine</li>
+                <li>1/2 cup milk or as needed</li>
+                <li>1/2 teaspoon salt</li>
+                <li>1/4 teaspoon ground pepper (optional)</li>
+                <li>1 tablespoon vegetable oil (for cooking)</li>
+            </ul>
+        </section>
+        
+        <section class="instructions">
+            <h2>Instructions</h2>
+            <ol>
+                <li>Peel and cut the yams into medium-sized chunks.</li>
+                <li>Boil the yam pieces in a large pot with enough water to cover them. Add a pinch of salt to the water and cook for about 20-30 minutes, or until the yams are soft and easily pierced with a fork.</li>
+                <li>Once the yams are cooked, drain the water and return the yams to the pot.</li>
+                <li>Use a potato masher or a fork to mash the yams until smooth and creamy. If the mixture is too thick, add milk or water gradually until you reach the desired consistency.</li>
+                <li>Stir in the butter or margarine, and season with salt and pepper to taste.</li>
+                <li>Continue mashing until the Mpotompoto is smooth and fluffy.</li>
+                <li>Serve warm as a side dish with your favorite Ghanaian soup or stew, such as light soup, groundnut soup, or palm nut soup.</li>
+            </ol>
+        </section>
+        
+        
+        
+
+        <!-- Embedded YouTube Video -->
+        <section class="video">
+            <h2>Watch How to Make Mpotompoto</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Uur1mYwWc78?si=BkfJvwoo5DlckFkw" 
+                title="Mpotompoto Recipe Video" frameborder="0" allowfullscreen>
+            </iframe>
+        </section>
+
+        <a href="/DishCover/recipes.html" class="back-link">← Back to Recipes</a>
+    </main>
+
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-sections">
+    <div class="footer-about">
+      
+         <div class="social-icons">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <img src="/dishcover/images/facebook-icon.svg" alt="Facebook">
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <img src="/dishcover/images/twitter-icon.svg" alt="Twitter">
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <img src="/dishcover/images/linkedin-icon.svg" alt="Linkedin">
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+            <img src="/dishcover/images/youtube-icon.svg" alt="Youtube">
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <img src="/dishcover/images/instagram-icon.svg" alt="Instagram">
+          </a>
+        </div>
+        
+    </div>
+    <div class="footer-links">
+      <h4>Quick Link</h4>
+      <ul>
+      <li><a href="/dishcover/Advanced.html">Advanced Search</a></li>
+      <li><a href="/dishcover/contactus.html">Contact Us</a></li>
+        </ul>
+    </div>
+    
+    <div class="footer-subscribe">
+      <h4>Subscribe</h4>
+      <p>Subscribe to our mailing list and get updates 
+          to your email box </p>
+      <input type="email" placeholder="Your email">
+      <button>Subscribe</button>
+      
+    </div>
+  </div>
+  
+</footer>
+<footer>
+  <div class="footer-bottom">
+    <p>2025 &copy; DishCover. All Rights Reserved | Designed by Thelma Buabeng</p>
+  </div>
+</footer>
+
+  <script src="/DishCover/script.js"></script>
+  <script src="/DishCover/explore.js"></script>
+
+</body>
+</html>

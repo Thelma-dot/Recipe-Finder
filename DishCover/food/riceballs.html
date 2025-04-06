@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DishCover</title>
+  <link rel="icon" type="image/png" href="/dishcover/images/logo.png">
+  <link rel="stylesheet" href="/dishcover/styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+          <h2><span class="red-text">Dish</span><span class="blue-text">Cover</span></h2>
+    </div>
+        <nav class="nav">
+          <ul>
+            <li>
+              <a href="/dishcover/index.html">
+                <img src="/dishcover/images/home.svg" alt="Home" width="24" height="24">
+              </a>
+            </li>
+            
+            <li><a href="/dishcover/recipes.html">Recipes</a></li>
+            <li><a href="/dishcover/blogs.html">Blogs</a></li>
+            <li><a href="/dishcover/aboutus.html">About Us</a></li>
+            <li><a href="/dishcover/contactus.html">Contact Us</a></li>
+            
+            </ul>
+            </nav>
+            <div class="search-container">
+              <input type="text" id="searchInput" placeholder="Search for a recipe...">
+              <button onclick="searchRecipe()">Search</button>
+          </div>
+          
+          <div id="results"></div> <!-- This will display the results -->
+          
+          
+          <div class="searchbar flex">
+            <input type="checkbox" name="check-toggle" id="checkbox" hidden="">
+            <label for="checkbox" class="toggle">
+            <div class="toggle__circle"></div>
+          </label>
+          <i class="fa-solid fa-magnifying-glass"></i>
+               </div> 
+          
+          </header>
+
+    <section>
+        <nav>
+            <a href="/dishcover/index.html">Home</a>
+            <a href="/dishcover/recipes.html">All Recipes</a>
+        </nav>
+    </section>
+
+    <main class="recipe-detail">
+        <h1>Riceball & Groundnut</h1>
+        <img src="/dishcover/images/riceball-groundnut.jpg" alt="kelewele">
+        
+        <section class="recipe-info">
+            <h2>About This Recipe</h2>
+            <p>Rice Balls (Omo Tuo) and Groundnut Soup is a popular Ghanaian dish made with soft mashed rice served with a rich, creamy peanut soup. It is commonly enjoyed with meat or fish.</p>
+        </section>
+        
+        <section class="ingredients">
+            <h2>Ingredients for Rice Balls (Omo Tuo)</h2>
+            <ul>
+                <li>2 cups rice (preferably soft, short-grain rice)</li>
+                <li>5 cups water</li>
+                <li>1/2 teaspoon salt (optional)</li>
+            </ul>
+        </section>
+        
+        <section class="instructions">
+            <h2>Instructions for Rice Balls (Omo Tuo)</h2>
+            <ol>
+                <li>Wash the rice thoroughly and place it in a pot with water.</li>
+                <li>Cook on medium heat, stirring occasionally to prevent burning.</li>
+                <li>Once the rice becomes soft and sticky, mash it with a wooden spoon.</li>
+                <li>Shape the mashed rice into smooth balls using wet hands.</li>
+                <li>Serve hot with groundnut soup.</li>
+            </ol>
+        </section>
+        
+        <section class="ingredients">
+            <h2>Ingredients for Groundnut Soup</h2>
+            <ul>
+                <li>1 cup peanut butter (groundnut paste)</li>
+                <li>3 cups water or broth</li>
+                <li>1 medium onion (chopped)</li>
+                <li>2 medium tomatoes (blended or chopped)</li>
+                <li>1 teaspoon ginger (grated)</li>
+                <li>2 cloves garlic (minced)</li>
+                <li>1 teaspoon salt</li>
+                <li>1 teaspoon chili powder (optional, for spice)</li>
+                <li>1 stock cube (optional)</li>
+                <li>1 pound meat or fish (chicken, goat, or smoked fish)</li>
+            </ul>
+        </section>
+        
+        <section class="instructions">
+            <h2>Instructions for Groundnut Soup</h2>
+            <ol>
+                <li>In a pot, heat a little water and cook the meat or fish with onions, garlic, ginger, salt, and stock cube until tender.</li>
+                <li>In a separate bowl, mix the peanut butter with 1 cup of warm water to form a smooth paste.</li>
+                <li>Add the peanut paste to the pot with the cooked meat.</li>
+                <li>Pour in the blended tomatoes and chili powder, then stir well.</li>
+                <li>Let the soup simmer for 30-40 minutes, stirring occasionally until the oil rises to the top.</li>
+                <li>Adjust salt and seasoning to taste.</li>
+                <li>Serve hot with rice balls.</li>
+            </ol>
+        </section>
+
+        <!-- Embedded YouTube Video -->
+        <section class="video">
+            <h2>Watch How to Make Riceball & Groundnut</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VQNlNi27qd8?si=WI1I2H0LVWc0u-e_" 
+                title="Riceball & Groundnut Recipe Video" frameborder="0" allowfullscreen>
+            </iframe>
+        </section>
+        
+
+        <a href="/dishcover/recipes.html" class="back-link">← Back to Recipes</a>
+    </main>
+
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-sections">
+    <div class="footer-about">
+      
+         <div class="social-icons">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <img src="/dishcover/images/facebook-icon.svg" alt="Facebook">
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <img src="/dishcover/images/twitter-icon.svg" alt="Twitter">
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <img src="/dishcover/images/linkedin-icon.svg" alt="Linkedin">
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+            <img src="/dishcover/images/youtube-icon.svg" alt="Youtube">
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <img src="/dishcover/images/instagram-icon.svg" alt="Instagram">
+          </a>
+        </div>
+        
+    </div>
+    <div class="footer-links">
+      <h4>Quick Link</h4>
+      <ul>
+      <li><a href="/dishcover/Advanced.html">Advanced Search</a></li>
+      <li><a href="/dishcover/contactus.html">Contact Us</a></li>
+        </ul>
+    </div>
+    
+    <div class="footer-subscribe">
+      <h4>Subscribe</h4>
+      <p>Subscribe to our mailing list and get updates 
+          to your email box </p>
+      <input type="email" placeholder="Your email">
+      <button>Subscribe</button>
+      
+    </div>
+  </div>
+  
+</footer>
+<footer>
+  <div class="footer-bottom">
+    <p>2025 &copy; DishCover. All Rights Reserved | Designed by Thelma Buabeng</p>
+  </div>
+</footer>
+
+  <script src="/dishcover/script.js"></script>
+  <script src="/DishCover/explore.js"></script>
+
+</body>
+</html>

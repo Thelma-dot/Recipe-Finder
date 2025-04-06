@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DishCover</title>
+  <link rel="icon" type="image/png" href="/DishCover/images/logo.png">
+  <link rel="stylesheet" href="/DishCover/styles.css">
+</head>
+<body>
+
+     <!-- Header Section -->
+  <header class="header">
+    <div class="logo">
+      <h2><span class="red-text">Dish</span><span class="blue-text">Cover</span></h2>
+</div>
+    <nav class="nav">
+      <ul>
+        <li>
+          <a href="/dishcover/index.html">
+            <img src="/dishcover/images/home.svg" alt="Home" width="24" height="24">
+          </a>
+        </li>
+
+        <li><a href="/DishCover/recipes.html">Recipes</a></li>
+        <li><a href="/DishCover/blogs.html">Blogs</a></li>
+        <li><a href="/DishCover/aboutus.html">About Us</a></li>
+        <li><a href="/DishCover/contactus.html">Contact Us</a></li>
+
+        </ul>
+        </nav>
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Search for a recipe...">
+          <button onclick="searchRecipe()">Search</button>
+      </div>
+      
+      <div id="results"></div> <!-- This will display the results -->
+      
+      
+      <div class="searchbar flex">
+        <input type="checkbox" name="check-toggle" id="checkbox" hidden="">
+        <label for="checkbox" class="toggle">
+        <div class="toggle__circle"></div>
+      </label>
+      <i class="fa-solid fa-magnifying-glass"></i>
+           </div> 
+      
+      </header>
+
+    <section>
+        <nav>
+            <a href="/DishCover/index.html">Home</a>
+            <a href="/DishCover/recipes.html">All Recipes</a>
+        </nav>
+    </section>
+
+    <main class="recipe-detail">
+        <h1>Plantain Chips</h1>
+        <img src="/DishCover/images/chips.jpg" alt="Plantain Chips">
+        
+        <section class="recipe-info">
+            <h2>About This Recipe</h2>
+            <p>Plantain Chips are a crispy and delicious Ghanaian snack made from unripe or slightly ripe plantains. They are often seasoned with salt and can be enjoyed on the go.</p>
+        </section>
+        
+        <section class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>2 large unripe or slightly ripe plantains</li>
+                <li>1 teaspoon salt</li>
+                <li>1/2 teaspoon cayenne pepper (optional, for spice)</li>
+                <li>Vegetable oil (for frying)</li>
+            </ul>
+        </section>
+        
+        <section class="instructions">
+            <h2>Instructions</h2>
+            <ol>
+                <li>Peel the plantains and slice them thinly using a knife or a mandoline slicer.</li>
+                <li>In a bowl, mix the plantain slices with salt and optional cayenne pepper.</li>
+                <li>Heat vegetable oil in a deep pan over medium heat.</li>
+                <li>Carefully add the plantain slices in batches and fry until golden brown and crispy.</li>
+                <li>Remove from oil and drain on a paper towel.</li>
+                <li>Let them cool completely before serving or storing in an airtight container.</li>
+            </ol>
+        </section>
+        
+        
+        
+
+        <!-- Embedded YouTube Video -->
+        <section class="video">
+            <h2>Watch How to Make Plantain Chips</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9Ld0crosyaQ?si=lAKwkMR4m7rWut2s" 
+                title="Plantain Chips Recipe Video" frameborder="0" allowfullscreen>
+            </iframe>
+        </section>
+
+        <a href="/DishCover/recipes.html" class="back-link">← Back to Recipes</a>
+    </main>
+
+    <!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-sections">
+    <div class="footer-about">
+      
+         <div class="social-icons">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <img src="/dishcover/images/facebook-icon.svg" alt="Facebook">
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <img src="/dishcover/images/twitter-icon.svg" alt="Twitter">
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <img src="/dishcover/images/linkedin-icon.svg" alt="Linkedin">
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+            <img src="/dishcover/images/youtube-icon.svg" alt="Youtube">
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <img src="/dishcover/images/instagram-icon.svg" alt="Instagram">
+          </a>
+        </div>
+        
+    </div>
+    <div class="footer-links">
+      <h4>Quick Link</h4>
+      <ul>
+      <li><a href="/dishcover/Advanced.html">Advanced Search</a></li>
+      <li><a href="/dishcover/contactus.html">Contact Us</a></li>
+        </ul>
+    </div>
+    
+    <div class="footer-subscribe">
+      <h4>Subscribe</h4>
+      <p>Subscribe to our mailing list and get updates 
+          to your email box </p>
+      <input type="email" placeholder="Your email">
+      <button>Subscribe</button>
+      
+    </div>
+  </div>
+  
+</footer>
+<footer>
+  <div class="footer-bottom">
+    <p>2025 &copy; DishCover. All Rights Reserved | Designed by Thelma Buabeng</p>
+  </div>
+</footer>
+
+  <script src="/DishCover/script.js"></script>
+  <script src="/DishCover/explore.js"></script>
+
+</body>
+</html>
