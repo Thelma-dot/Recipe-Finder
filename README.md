@@ -63,7 +63,7 @@ This project is licensed under the **MIT License**.
 
 ## Contact
 For any inquiries or suggestions, feel free to reach out!
-- **Email:** your.email@example.com
+- **Email:** thelmabuabeng4@gmail.com
 - **GitHub:** [Thelma-dot](https://github.com/Thelma-dot)
 
 ---
