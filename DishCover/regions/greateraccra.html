@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DishCover</title>
+  <link rel="icon" type="image/png" href="/DishCover/images/logo.png">
+  <link rel="stylesheet" href="/DishCover/styles.css">
+  
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="logo">
+      <h2><span class="red-text">Dish</span><span class="blue-text">Cover</span></h2>
+      </a>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li>
+          <a href="/dishcover/index.html">
+            <img src="/dishcover/images/home.svg" alt="Home" width="24" height="24">
+          </a>
+        </li>
+        <li><a href="/DishCover/recipes.html">Recipes</a></li>
+        <li><a href="/DishCover/blogs.html">Blogs</a></li>
+        <li><a href="/DishCover/aboutus.html">About Us</a></li>
+        <li><a href="/DishCover/contactus.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search for a recipe...">
+        <button onclick="searchRecipe()">Search</button>
+    </div>
+    
+    <div id="results"></div> <!-- This will display the results -->
+    
+    
+    <div class="searchbar flex">
+      <input type="checkbox" name="check-toggle" id="checkbox" hidden="">
+      <label for="checkbox" class="toggle">
+      <div class="toggle__circle"></div>
+    </label>
+    <i class="fa-solid fa-magnifying-glass"></i>
+         </div> 
+  </header>
+
+  <!-- Hero Section -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Cooking Made Easy</h1>
+    <p>Discover Delicious Recipes Today</p>
+    <button onclick="window.location.href='/dishcover/recipes.html'">Explore Recipes</button>
+
+  </div>
+</section>
+
+  
+
+   <!-- Recipe Section -->
+<section class="recipes">
+  <h2>Main Foods</h2>
+  <div class="recipe-grid">
+    <a href="/dishcover/food/gakenkey.html" class="recipe-card">
+      <img src="/DishCover/images/ga-kenkey.jpg" alt="Ga Kenkey">
+      <p>Ga Kenkey</p>
+    </a>
+    <a href="/dishcover/food/jollof-rice.html" class="recipe-card">
+      <img src="/DishCover/images/jollof.jpg" alt="Jollof Rice">
+      <p>jollof Rice</p>
+    </a>
+    <a href="/dishcover/food/banku-tilapia.html" class="recipe-card">
+      <img src="/DishCover/images/banku&tilapia.jpg" alt="Banku and Tilapia">
+      <p>Banku and Tilapia</p>
+    </a>
+    <a href="/dishcover/food/bambara.html" class="recipe-card">
+      <img src="/DishCover/images/bambara.jpg" alt="Bambara Beans">
+      <p>Bambara Beans</p>
+    </a>
+    <a href="/dishcover/food/angwamo.html" class="recipe-card">
+      <img src="/DishCover/images/angwamo.jpg" alt="Angwamo">
+      <p>Angwamo</p>
+    </a>
+    <a href="/dishcover/food/waakye.html" class="recipe-card">
+      <img src="/DishCover/images/waakye.jpg" alt="waakye">
+      <p>Waakye</p>
+    </a>
+    <a href="/dishcover/food/redred.html" class="recipe-card">
+      <img src="/DishCover/images/redred.jpg" alt="Red Red">
+      <p>Red Red</p>
+    </a>
+    <a href="/dishcover/food/okro.html" class="recipe-card">
+      <img src="/DishCover/images/okro.jpg" alt="Red Red">
+      <p>Banku & Okro</p>
+    </a>
+    
+  </div>
+</section>
+
+
+<section class="recipes">
+    <h2>Drinks</h2>
+    <div class="recipe-grid">
+      <a href="/dishcover/drinks/asaana.html" class="recipe-card">
+        <img src="/DishCover/images/asaana.jpg" alt="Asaana">
+        <p>Asaana</p>
+      </a>
+      <a href="/dishcover/drinks/sobolo.html" class="recipe-card">
+        <img src="/DishCover/images/sobolo.jpg" alt="Sobolo">
+        <p>Sobolo</p>
+      </a>
+      <a href="/dishcover/drinks/ice-kenkey.html" class="recipe-card">
+        <img src="/DishCover/images/ice-kenkey.jpg" alt="Ice Kenkey">
+        <p>Ice Kenkey</p>
+      </a>
+      <a href="/dishcover/drinks/pito.html" class="recipe-card">
+        <img src="/DishCover/images/pito.jpg" alt="Pito">
+        <p>Pito</p>
+      </a>
+    </div>
+  </section>
+
+
+  <section class="recipes">
+    <h2>Sweets & Snacks</h2>
+    <div class="recipe-grid">
+      <a href="/dishcover/snacks/kelewele.html" class="recipe-card">
+        <img src="/DishCover/images/kelewele.jpg" alt="Kelewele">
+        <p>Kelewele</p>
+      </a>
+      <a href="/dishcover/snacks/nkatie.html" class="recipe-card">
+        <img src="/DishCover/images/nkatie.jpg" alt="Nkatie Cake">
+        <p>Nkatie Cake</p>
+      </a>
+      <a href="/dishcover/snacks/atwemo.html" class="recipe-card">
+        <img src="/DishCover/images/atwemo.jpg" alt="Atwemo">
+        <p>Atwemo</p>
+      </a>
+      <a href="/dishcover/snacks/plantain.html" class="recipe-card">
+        <img src="/DishCover/images/plantain.jpg" alt="Roasted Plantain">
+        <p>Roasted Plantain</p>
+      </a>
+      <a href="/dishcover/snacks/poloo.html" class="recipe-card">
+        <img src="/DishCover/images/poloo.jpg" alt="Poloo">
+        <p>Poloo</p>
+      </a>
+      <a href="/dishcover/snacks/bofrot.html" class="recipe-card">
+        <img src="/DishCover/images/bofrot.jpg" alt="Bofrot">
+        <p>Bofrot</p>
+      </a>
+      <a href="/dishcover/snacks/abele.html" class="recipe-card">
+        <img src="/DishCover/images/abele.jpg" alt="Abele">
+        <p>Abele</p>
+      </a>
+    </div>
+  </section>
+
+
+  
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-sections">
+      <div class="footer-about">
+        <h4>About Us</h4>
+        <p>I create unique, twist-filled recipes daily
+            and share engaging blog posts with fun 
+           kitchen ideas.</p>
+           <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <img src="/DishCover/images/facebook-icon.svg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <img src="/DishCover/images/twitter-icon.svg" alt="Twitter">
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <img src="/DishCover/images/linkedin-icon.svg" alt="Linkedin">
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+              <img src="/DishCover/images/youtube-icon.svg" alt="Youtube">
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <img src="/DishCover/images/instagram-icon.svg" alt="Instagram">
+            </a>
+          </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Link</h4>
+        <ul>
+          <li><a href="/dishcover/Advanced.html">Advanced Search</a></li>
+        <li><a href="/dishcover/contactus.html">Contact Us</a></li>
+          </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Info</h4>
+        <p>Location: Tema,Afienya</p>
+        <p>Email: info@dishcover.com</p>
+        <p>Phone: +233595634868</p>
+      </div>
+      <div class="footer-subscribe">
+        <h4>Subscribe</h4>
+        <p>Subscribe to our mailing list and get updates 
+            to your email box </p>
+        <input type="email" placeholder="Your email">
+        <button>Subscribe</button>
+      </div>
+    </div>
+
+  </footer>
+  <footer>
+    <div class="footer-bottom">
+      <p>2025 &copy; DishCover. All Rights Reserved | Designed by Thelma Buabeng</p>
+    </div>
+  </footer>
+  <script src="/DishCover/script.js"></script>
+  <script src="/DishCover/explore.js"></script>
+</body>
+
+</html>

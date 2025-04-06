@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DishCover - Home</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="logo">
+      <h2><span class="red-text">Dish</span><span class="blue-text">Cover</span></h2>
+      </a>
+    </div>
+    <nav class="nav">
+      <ul><li>
+        <a href="index.html">
+          <img src="images/home.svg" alt="Home" width="24" height="24">
+        </a>
+      </li><li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        
+        
+        </ul>
+      </nav>
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search for a recipe...">
+        <button onclick="searchRecipe()">Search</button>
+    </div>
+    
+    <div id="results"></div> <!-- This will display the results -->
+    
+    <div class="searchbar flex">
+      <input type="checkbox" name="check-toggle" id="checkbox" hidden="">
+      <label for="checkbox" class="toggle">
+      <div class="toggle__circle"></div>
+    </label>
+    <i class="fa-solid fa-magnifying-glass"></i>
+         </div> 
+         
+  </header>
+
+   <!-- Hero Section -->
+   <section class="hero">
+    <div class="hero-text">
+      <h1>Cooking Made Easy</h1>
+      <p>Discover Delicious Recipes Today</p>
+      <button onclick="window.location.href='recipes.html'">Explore Recipes</button>
+
+    </div>
+  </section>
+
+  
+  <!-- About Us Section -->
+<section class="about-us bg-white py-16 px-6">
+  <div class="container mx-auto text-center max-w-4xl">
+    <!-- Image -->
+    <div class="flex justify-center mb-6">
+      <img src="images/about.jpg" alt="Cooking Together" 
+           class="rounded-lg shadow-md w-full md:w-2/3">
+  </div>
+      <!-- Section Title -->
+      <h2 class="text-4xl font-bold text-gray-800 mb-4">Who We Are</h2>
+      <p class="text-gray-600 text-lg mb-6">
+        Welcome to DishCover—your ultimate guide to the rich and diverse culinary world of Ghana! Whether you're craving a savory dish, a sweet snack, or a refreshing drink, we've got you covered with authentic Ghanaian recipes from all the regions.
+
+        At DishCover, we believe that food is more than just sustenance—it’s a way to connect with culture, traditions, and history. Our platform celebrates the vibrant flavors of Ghana, bringing you a collection of regional dishes, street foods, and beloved snacks that showcase the uniqueness of each area.
+        
+        From the spicy Jollof Rice of Accra to the delectable Chibom from the Volta Region, and the refreshing Palm Wine from the Central Region, DishCover is here to make sure that no matter where you are, the tastes of Ghana are always at your fingertips.
+        
+        Join us as we explore the diverse flavors and rich history behind every recipe, making it easier than ever to recreate these mouthwatering dishes in your own kitchen. Explore, cook, and share the joy of Ghanaian cuisine with DishCover—where the heart of Ghana meets your plate!
+      </p>
+
+      
+      <!-- Additional Info -->
+      <p class="text-gray-700 text-lg mb-4">
+          Whether you're looking for traditional flavors or new creative recipes, we’ve got you covered.
+      </p>
+
+      <!-- Call to Action Button -->
+      <button onclick="window.location.href='recipes.html'" 
+      class="mt-4 inline-block bg-green-500 text-white px-6 py-2 rounded-full shadow-lg hover:bg-green-600 transition">
+      Get in Touch
+    </button>
+  </div>
+</section>
+
+
+<section id="tranding">
+  <div class="container">
+    <div class="swiper tranding-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="images/ampesi-kontomire.jpg" alt="ampesi-kontomire">
+          </div>
+          </div>
+          <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="images/ga-kenkey.jpg" alt="ga-kenkey">
+          </div>
+          </div>
+          <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="images/fufu-light-soup.jpg" alt="fufu-light-soup">
+          </div>
+          </div>
+          <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="images/waakye.jpg" alt="waakye">
+          </div>
+          </div>
+          <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="images/toozafi.jpg" alt="toozafi">
+          </div>
+          </div>
+          <div class="swiper-slide tranding-slide">
+            <div class="tranding-slide-img">
+              <img src="images/nkatie.jpg" alt="nkatie">
+            </div>
+            </div>
+          <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="images/drink.jpg" alt="drink">
+          </div>
+          </div>
+          <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="images/sausage.jpg" alt="sausage">
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-sections">
+      <div class="footer-about">
+        <h4>About Us</h4>
+        <p>I create unique, twist-filled recipes daily
+            and share engaging blog posts with fun 
+           kitchen ideas.</p>
+           <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <img src="images/facebook-icon.svg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <img src="images/twitter-icon.svg" alt="Twitter">
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <img src="images/linkedin-icon.svg" alt="Linkedin">
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+              <img src="images/youtube-icon.svg" alt="Youtube">
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <img src="images/instagram-icon.svg" alt="Instagram">
+            </a>
+          </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Link</h4>
+        <ul>
+          <li><a href="Advanced.html">Advanced Search</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+              </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Info</h4>
+        <p>Location: Tema,Afienya</p>
+        <p>Email: info@dishcover.com</p>
+        <p>Phone: +233595634868</p>
+      </div>
+      <div class="footer-subscribe">
+        <h4>Subscribe</h4>
+        <p>Subscribe to our mailing list and get updates 
+            to your email box </p>
+        <input type="email" placeholder="Your email">
+        <button>Subscribe</button>
+      </div>
+    </div>
+  </footer>
+  <footer>
+    <div class="footer-bottom">
+      <p>2025 &copy; DishCover. All Rights Reserved | Designed by Thelma Buabeng</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="explore.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DishCover</title>
+  <link rel="icon" type="image/png" href="/dishcover/images/logo.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="explore.css">
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="logo">
+      <h2><span class="red-text">Dish</span><span class="blue-text">Cover</span></h2>
+      </a>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li>
+          <a href="index.html">
+            <img src="images/home.svg" alt="Home" width="24" height="24">
+          </a>
+        </li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search for a recipe...">
+        <button onclick="searchRecipe()">Search</button>
+    </div>
+    
+    
+    <div class="searchbar flex">
+      <input type="checkbox" name="check-toggle" id="checkbox" hidden="">
+      <label for="checkbox" class="toggle">
+      <div class="toggle__circle"></div>
+    </label>
+    <i class="fa-solid fa-magnifying-glass"></i>
+         </div> 
+         
+         
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+        </div>
+
+    <!-- Image Gallery -->
+    <div class="image-gallery">
+        <div class="image-item">
+            <img src="images/bg1.jpg" alt="Recipe 1">
+        </div>
+        <div class="image-item">
+            <img src="images/bg2.jpg" alt="Recipe 2">
+        </div>
+        <div class="image-item">
+            <img src="images/bg3.jpg" alt="Recipe 3">
+        </div>
+        <div class="image-item">
+            <img src="images/bg4.jpg" alt="Recipe 4">
+        </div>
+    </div>
+</section>
+
+  
+  <!-- Recipe Search Results -->
+  <section id="results" class="results-container mt-10">
+    <div id="results"></div>
+    
+  </section>
+  
+  
+
+<script src="explore.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
