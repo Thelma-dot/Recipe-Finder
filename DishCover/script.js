@@ -1,10 +1,9 @@
-// Ensure bcrypt.js is loaded before execution
 const script = document.createElement("script");
 script.src = "https://cdnjs.cloudflare.com/ajax/libs/bcryptjs/2.4.3/bcrypt.min.js";
 script.onload = () => console.log("bcrypt.js loaded successfully.");
 document.head.appendChild(script);
 
-// Wait for DOM to fully load before adding event listeners
+
 document.addEventListener("DOMContentLoaded", () => {
   setupAuthHandlers();
   setupThemeToggle();
@@ -15,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setupSearchFunctionality();
 });
 
-// ========================= Contact Form Handler =========================
+
 function setupContactFormHandler() {
   const contactForm = document.getElementById("contact-form");
   if (!contactForm) return;
@@ -34,7 +33,7 @@ function setupContactFormHandler() {
   });
 }
 
-// ========================= Search Functionality =========================
+
 function setupSearchFunctionality() {
   const searchInput = document.getElementById("searchInput");
   const searchButton = document.getElementById("searchButton");
@@ -51,7 +50,7 @@ function setupSearchFunctionality() {
   }
 }
 
-// ========================= Dark Mode Toggle =========================
+
 const checkbox = document.getElementById("checkbox");
 const body = document.body;
 
