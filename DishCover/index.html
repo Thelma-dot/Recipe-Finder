@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DishCover</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3glpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohG8reCfkKxlhei6S9CQXFEbbKuqlg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="logo">
+      <h2><span class="red-text">Dish</span><span class="blue-text">Cover</span></h2>
+</div>
+    <nav class="nav">
+      <ul>
+        <li>
+          <a href="#">
+            <img src="images/home.svg" alt="Home" width="24" height="24">
+          </a>
+        </li>
+        
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+        </nav>
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Search for a recipe...">
+          <button onclick="searchRecipe()">Search</button>
+      </div>
+      
+      <div id="results"></div> <!-- This will display the results -->
+      
+      
+      <div class="searchbar flex">
+        <input type="checkbox" name="check-toggle" id="checkbox" hidden="">
+        <label for="checkbox" class="toggle">
+        <div class="toggle__circle"></div>
+      </label>
+      <i class="fa-solid fa-magnifying-glass"></i>
+           </div> 
+           
+      
+      </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Cooking Made Easy</h1>
+      <p>Discover Delicious Recipes Today</p>
+      <button onclick="window.location.href='recipes.html'">Explore Recipes</button>
+
+    </div>
+  </section>
+
+ 
+  <!-- Recipe Section -->
+<section class="recipes">
+  <h2>Recipes</h2>
+  <div class="recipe-grid">
+    <div class="recipe-card">
+      <img src="images/ga-kenkey.jpg" alt="Greater Accra">
+      <p>Greater Accra</p>
+    </div>
+    <div class="recipe-card">
+      <img src="images/fufu-light-soup.jpg" alt="Ashanti">
+      <p>Ashanti</p>
+    </div>
+    <div class="recipe-card">
+      <img src="images/akple.jpg" alt="akple">
+      <p>Volta</p>
+    </div>
+    <div class="recipe-card">
+      <img src="images/ampesi-kontomire.jpg" alt="Eastern">
+      <p>Eastern</p>
+    </div>
+    <div class="recipe-card">
+      <img src="images/toozafi.jpg" alt="Northern">
+      <p>Northern</p>
+    </div>
+    <div class="recipe-card">
+      <img src="images/pito.jpg" alt="Upper East">
+      <p>Upper East</p>
+    </div>
+    <div class="recipe-card">
+      <img src="images/upper-west.jpg" alt="Upper West">
+      <p>Upper West</p>
+    </div>
+    <div class="recipe-card">
+      <img src="images/etsew-palmnut.jpg" alt="Western">
+      <p>Western</p>
+    </div>
+    <div class="recipe-card">
+      <img src="images/wele-soup.jpg" alt="Savannah">
+      <p>Savannah</p>
+    </div>
+    <div class="recipe-card">
+      <img src="images/fante-fante.jpg" alt="Central">
+      <p>Central</p>
+    </div>
+    <div class="recipe-card">
+      <img src="images/eto.jpg" alt="Bono East">
+      <p>Bono East</p>
+    </div>
+    <div class="recipe-card">
+      <img src="images/yam-gardenegg.jpg" alt="Ahafo">
+      <p>Ahafo</p>
+    </div>
+  </div>
+       <!-- More Button with Link -->
+       <div class="more-button-container">
+        <a href="recipes.html" class="more-button">More...</a>
+      </div>
+</section>
+
+
+  <!-- Blogs Section -->
+  <section class="blogs">
+    <h3>Latest News</h3>
+    <h2>Our Fresh Blogs</h2>
+    <div class="blog-grid">
+      <div class="blog-card">
+        <img src="images/blog1.jpg" alt="Blog 1">
+        <p>Wedding Events</p>
+      </div>
+      <div class="blog-card">
+        <img src="images/blog2.jpg" alt="Blog 2">
+        <p>Parties Events</p>
+      </div>
+      <div class="blog-card">
+        <img src="images/blog3.jpg" alt="Blog 3">
+        <p>Funerals Events</p>
+      </div>
+      <div class="blog-card">
+        <img src="images/blog4.jpg" alt="Blog 3">
+        <p>corporate Events</p>
+      </div>
+    </div>
+  </section>
+
+  
+ <!-- About Us Section -->
+<section class="about-us bg-gray-100 py-10 px-5">
+  <div class="container mx-auto flex flex-col md:flex-row items-center">
+      <!-- Left Side: Image -->
+      <div class="md:w-1/2">
+          <img src="images/about.jpg" alt="About Us Image" class="rounded-lg shadow-lg w-full">
+      </div>
+      
+      <!-- Right Side: Text Content -->
+      <div class="md:w-1/2 mt-5 md:mt-0 md:pl-10">
+          <h2 class="text-3xl font-bold text-gray-800">About Us</h2>
+          <p class="text-gray-600 mt-4">
+              Welcome to our platform! We are passionate about sharing the best recipes with you, 
+              ensuring you enjoy homemade meals with a special touch. From traditional to modern dishes, 
+              we aim to make cooking easy and enjoyable for everyone.
+          </p>
+          <h3 class="text-gray-600 mt-2">
+              Join our community and explore a world of delicious flavors.
+          </h3>
+          <button onclick="window.location.href='aboutus.html'" 
+  class="mt-4 inline-block bg-green-500 text-white px-6 py-2 rounded-full shadow-lg hover:bg-green-600 transition">
+  Get in Touch
+</button>
+
+      </div>
+  </div>
+</section>
+
+
+  <!-- Contact Us Section -->
+<section class="contact-us">
+  <div class="container">
+      <h2>Contact Us</h2>
+      <p>Have questions or feedback? We'd love to hear from you!</p>
+
+      <div class="contact-form">
+          <form action="submit-form.php" method="POST">
+              <div class="input-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" placeholder="Enter your name" required>
+              </div>
+
+              <div class="input-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="Enter your email" required>
+              </div>
+
+              <div class="input-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
+              </div>
+
+              <button type="submit" class="contact-btn">Send Message</button>
+          </form>
+        </div>
+</section>
+
+
+
+  
+<section id="tranding">
+  <div class="container">
+    <div class="swiper tranding-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="images/ampesi-kontomire.jpg" alt="ampesi-kontomire">
+          </div>
+          </div>
+          <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="images/ga-kenkey.jpg" alt="ga-kenkey">
+          </div>
+          </div>
+          <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="images/fufu-light-soup.jpg" alt="fufu-light-soup">
+          </div>
+          </div>
+          <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="images/waakye.jpg" alt="waakye">
+          </div>
+          </div>
+          <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="images/toozafi.jpg" alt="toozafi">
+          </div>
+          </div>
+          <div class="swiper-slide tranding-slide">
+            <div class="tranding-slide-img">
+              <img src="images/nkatie.jpg" alt="nkatie">
+            </div>
+            </div>
+          <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="images/drink.jpg" alt="drink">
+          </div>
+          </div>
+          <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="images/sausage.jpg" alt="sausage">
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-sections">
+      <div class="footer-about">
+        
+           <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <img src="images/facebook-icon.svg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <img src="images/twitter-icon.svg" alt="Twitter">
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <img src="images/linkedin-icon.svg" alt="Linkedin">
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+              <img src="images/youtube-icon.svg" alt="Youtube">
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <img src="images/instagram-icon.svg" alt="Instagram">
+            </a>
+          </div>
+          
+      </div>
+      <div class="footer-links">
+        <h4>Quick Link</h4>
+        <ul>
+        <li><a href="Advanced.html">Advanced Search</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+          </ul>
+      </div>
+      
+      <div class="footer-subscribe">
+        <h4>Subscribe</h4>
+        <p>Subscribe to our mailing list and get updates 
+            to your email box </p>
+        <input type="email" placeholder="Your email">
+        <button>Subscribe</button>
+        
+      </div>
+    </div>
+    
+  </footer>
+  <footer>
+    <div class="footer-bottom">
+      <p>2025 &copy; DishCover. All Rights Reserved | Designed by Thelma Buabeng</p>
+    </div>
+  </footer>
+  
+
+
+  <script src="script.js"></script>
+  <script src="explore.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+</body>
+
+</html>
