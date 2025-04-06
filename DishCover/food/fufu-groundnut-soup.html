@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DishCover</title>
+  <link rel="icon" type="image/png" href="/dishcover/images/logo.png">
+  <link rel="stylesheet" href="/dishcover/styles.css">
+</head>
+<body>
+
+     <!-- Header Section -->
+  <header class="header">
+    <div class="logo">
+      <h2><span class="red-text">Dish</span><span class="blue-text">Cover</span></h2>
+</div>
+    <nav class="nav">
+      <ul>
+        <li>
+          <a href="/dishcover/index.html">
+            <img src="/dishcover/images/home.svg" alt="Home" width="24" height="24">
+          </a>
+        </li>
+        
+        <li><a href="/dishcover/recipes.html">Recipes</a></li>
+        <li><a href="/dishcover/blogs.html">Blogs</a></li>
+        <li><a href="/dishcover/aboutus.html">About Us</a></li>
+        <li><a href="/dishcover/contactus.html">Contact Us</a></li>
+
+        </ul>
+        </nav>
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Search for a recipe...">
+          <button onclick="searchRecipe()">Search</button>
+      </div>
+      
+      <div id="results"></div> <!-- This will display the results -->
+      
+      
+      <div class="searchbar flex">
+        <input type="checkbox" name="check-toggle" id="checkbox" hidden="">
+        <label for="checkbox" class="toggle">
+        <div class="toggle__circle"></div>
+      </label>
+      <i class="fa-solid fa-magnifying-glass"></i>
+           </div> 
+      
+      </header>
+
+    <section>
+        <nav>
+            <a href="/dishcover/index.html">Home</a>
+            <a href="/dishcover/recipes.html">All Recipes</a>
+        </nav>
+    </section>
+
+    <main class="recipe-detail">
+        <h1>Fufu & Groundnut Soup</h1>
+        <img src="/dishcover/images/fufu-groundnut-soup.jpg" alt="Sobolo">
+        
+        <section class="recipe-info">
+            <h2>About This Recipe</h2>
+            <p>Fufu and Groundnut Soup is a rich and flavorful Ghanaian dish. Groundnut (peanut) soup is made with a creamy peanut butter base, tomatoes, and spices, often served with meat or fish alongside soft, stretchy fufu.</p>
+        </section>
+        
+        <section class="ingredients">
+            <h2>Ingredients for Fufu</h2>
+            <ul>
+                <li>2 medium-sized cassavas</li>
+                <li>2 ripe plantains</li>
+                <li>Water (for boiling)</li>
+                <li>Fufu powder (alternative for instant fufu)</li>
+            </ul>
+        
+            <h2>Ingredients for Groundnut Soup</h2>
+            <ul>
+                <li>1 cup unsweetened peanut butter</li>
+                <li>1 pound (500g) chicken, beef, goat meat, or fish</li>
+                <li>3 fresh tomatoes</li>
+                <li>1 large onion (chopped)</li>
+                <li>3 cloves garlic (minced)</li>
+                <li>1 teaspoon ginger (grated)</li>
+                <li>1 teaspoon salt (or to taste)</li>
+                <li>1 teaspoon black pepper</li>
+                <li>1 teaspoon cayenne pepper (optional for extra spice)</li>
+                <li>1 tablespoon tomato paste</li>
+                <li>4 cups water or stock</li>
+                <li>1 seasoning cube (optional)</li>
+                <li>1 small piece of prekese (optional, for extra flavor)</li>
+            </ul>
+        </section>
+        
+        <section class="instructions">
+            <h2>Instructions for Fufu</h2>
+            <ol>
+                <li>Peel the cassava and plantains, then cut them into small pieces.</li>
+                <li>Boil them in a pot of water until soft.</li>
+                <li>Drain the water and pound them together using a mortar and pestle until smooth and stretchy.</li>
+                <li>Alternatively, blend the boiled cassava and plantain, then stir over low heat until smooth.</li>
+                <li>Shape the fufu into small balls and set aside.</li>
+            </ol>
+        
+            <h2>Instructions for Groundnut Soup</h2>
+            <ol>
+                <li>In a pot, season the meat or fish with salt, black pepper, garlic, and ginger.</li>
+                <li>Add chopped onions and a little water, then steam for about 10 minutes.</li>
+                <li>Blend the fresh tomatoes and add them to the pot along with tomato paste.</li>
+                <li>In a separate bowl, mix peanut butter with 1 cup of warm water until smooth.</li>
+                <li>Pour the peanut butter mixture into the pot, followed by the remaining water or stock.</li>
+                <li>Add cayenne pepper, seasoning cube, and prekese if using.</li>
+                <li>Allow the soup to simmer for 30–40 minutes, stirring occasionally.</li>
+                <li>Adjust seasoning as needed and let it cook until the oil rises to the top.</li>
+                <li>Remove from heat and serve hot with fufu.</li>
+            </ol>
+        </section>
+        
+      
+        
+
+        <!-- Embedded YouTube Video -->
+        <section class="video">
+            <h2>Watch How to Make Fufu & Groundnut Soup</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9rf0oEld1_w?si=w10_Ck4LYraYcQ_4" 
+                title="Fufu & Groundnut Soup Recipe Video" frameborder="0" allowfullscreen>
+            </iframe>
+        </section>
+
+        <a href="/dishcover/recipes.html" class="back-link">← Back to Recipes</a>
+    </main>
+
+    <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-sections">
+      <div class="footer-about">
+        <h4>About Us</h4>
+        <p>I create unique, twist-filled recipes daily
+            and share engaging blog posts with fun 
+           kitchen ideas.</p>
+           <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <img src="/dishcover/images/facebook-icon.svg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <img src="/dishcover/images/twitter-icon.svg" alt="Twitter">
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <img src="/dishcover/images/linkedin-icon.svg" alt="Linkedin">
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+              <img src="/dishcover/images/youtube-icon.svg" alt="Youtube">
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <img src="/dishcover/images/instagram-icon.svg" alt="Instagram">
+            </a>
+          </div>
+          
+      </div>
+      <div class="footer-links">
+        <h4>Quick Link</h4>
+        <ul>
+          <li><a href="/dishcover/Advanced.html">Advanced Search</a></li>
+        <li><a href="/dishcover/contactus.html">Contact Us</a></li>
+          </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Info</h4>
+        <p>Location: Tema,Afienya</p>
+        <p>Email: info@dishcover.com</p>
+        <p>Phone: +233595634868</p>
+      </div>
+      <div class="footer-subscribe">
+        <h4>Subscribe</h4>
+        <p>Subscribe to our mailing list and get updates 
+            to your email box </p>
+        <input type="email" placeholder="Your email">
+        <button>Subscribe</button>
+        
+      </div>
+    </div>
+
+  </footer>
+  <footer>
+    <div class="footer-bottom">
+      <p>2025 &copy; DishCover. All Rights Reserved | Designed by Thelma Buabeng</p>
+    </div>
+  </footer>
+  <script src="/dishcover/script.js"></script>
+  <script src="/DishCover/explore.js"></script>
+
+</body>
+</html>

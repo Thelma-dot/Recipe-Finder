@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DishCover</title>
+  <link rel="icon" type="image/png" href="/dishcover/images/logo.png">
+  <link rel="stylesheet" href="/dishcover/styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+          <h2><span class="red-text">Dish</span><span class="blue-text">Cover</span></h2>
+    </div>
+        <nav class="nav">
+          <ul>
+            <li>
+              <a href="/dishcover/index.html">
+                <img src="/dishcover/images/home.svg" alt="Home" width="24" height="24">
+              </a>
+            </li>
+            
+            <li><a href="/dishcover/recipes.html">Recipes</a></li>
+            <li><a href="/dishcover/blogs.html">Blogs</a></li>
+            <li><a href="/dishcover/aboutus.html">About Us</a></li>
+            <li><a href="/dishcover/contactus.html">Contact Us</a></li>
+
+            </ul>
+            </nav>
+            <div class="search-container">
+              <input type="text" id="searchInput" placeholder="Search for a recipe...">
+              <button onclick="searchRecipe()">Search</button>
+          </div>
+          
+          <div id="results"></div> <!-- This will display the results -->
+          
+          
+          <div class="searchbar flex">
+            <input type="checkbox" name="check-toggle" id="checkbox" hidden="">
+            <label for="checkbox" class="toggle">
+            <div class="toggle__circle"></div>
+          </label>
+          <i class="fa-solid fa-magnifying-glass"></i>
+               </div> 
+          
+          </header>
+
+    <section>
+        <nav>
+            <a href="/dishcover/index.html">Home</a>
+            <a href="/dishcover/recipes.html">All Recipes</a>
+        </nav>
+    </section>
+
+    <main class="recipe-detail">
+        <h1>Kelewele</h1>
+        <img src="/dishcover/images/angwamo.jpg" alt="kelewele">
+        
+        <section class="recipe-info">
+            <h2>About This Recipe</h2>
+            <p>Angwamo, also known as Ghanaian Oil Rice, is a simple but flavorful dish made by frying rice in oil before cooking it. It is often served with fried eggs, sardines, or avocado.</p>
+        </section>
+        
+        <section class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>2 cups rice (preferably long-grain)</li>
+                <li>3 tablespoons vegetable oil or palm oil</li>
+                <li>1 small onion, sliced</li>
+                <li>1 teaspoon salt</li>
+                <li>2 cups water</li>
+                <li>1 teaspoon grated ginger (optional)</li>
+                <li>1 teaspoon garlic (optional)</li>
+                <li>1 stock cube (optional, for extra flavor)</li>
+            </ul>
+        </section>
+        
+        <section class="instructions">
+            <h2>Instructions</h2>
+            <ol>
+                <li>Heat oil in a pot over medium heat.</li>
+                <li>Add the sliced onions and fry until golden brown.</li>
+                <li>Stir in the garlic and ginger (if using), then add the rice.</li>
+                <li>Fry the rice for about 3-5 minutes, stirring occasionally.</li>
+                <li>Add water and salt, then bring to a boil.</li>
+                <li>Cover and let it simmer for about 15-20 minutes, or until the rice is fully cooked.</li>
+                <li>Fluff the rice and serve with fried eggs, sardines, or avocado.</li>
+            </ol>
+        </section> 
+
+        <!-- Embedded YouTube Video -->
+        <section class="video">
+            <h2>Watch How to Make Ga Kenkey</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/PweTSksKbqA?si=AhHu_8kTJFubomz_" 
+                title="Ga Kenkey Recipe Video" frameborder="0" allowfullscreen>
+            </iframe>
+        </section>
+        
+
+        <a href="/dishcover/recipes.html" class="back-link">← Back to Recipes</a>
+    </main>
+
+    <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-sections">
+      <div class="footer-about">
+        <h4>About Us</h4>
+        <p>I create unique, twist-filled recipes daily
+            and share engaging blog posts with fun 
+           kitchen ideas.</p>
+           <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <img src="/dishcover/images/facebook-icon.svg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <img src="/dishcover/images/twitter-icon.svg" alt="Twitter">
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <img src="/dishcover/images/linkedin-icon.svg" alt="Linkedin">
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+              <img src="/dishcover/images/youtube-icon.svg" alt="Youtube">
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <img src="/dishcover/images/instagram-icon.svg" alt="Instagram">
+            </a>
+          </div>
+          
+      </div>
+      <div class="footer-links">
+        <h4>Quick Link</h4>
+        <ul>
+          <li><a href="/dishcover/Advanced.html">Advanced Search</a></li>
+        <li><a href="/dishcover/contactus.html">Contact Us</a></li>
+          </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Info</h4>
+        <p>Location: Tema,Afienya</p>
+        <p>Email: info@dishcover.com</p>
+        <p>Phone: +233595634868</p>
+      </div>
+      <div class="footer-subscribe">
+        <h4>Subscribe</h4>
+        <p>Subscribe to our mailing list and get updates 
+            to your email box </p>
+        <input type="email" placeholder="Your email">
+        <button>Subscribe</button>
+        
+      </div>
+    </div>
+    
+  </footer>
+  <footer>
+    <div class="footer-bottom">
+      <p>2025 &copy; DishCover. All Rights Reserved | Designed by Thelma Buabeng</p>
+    </div>
+  </footer>
+  <script src="/dishcover/script.js"></script>
+  <script src="/DishCover/explore.js"></script>
+
+</body>
+</html>
