@@ -982,3 +982,10 @@ input, select, button {
     margin: 20px;
   }
 }
+@media (max-width: 768px) {
+  /* Styles for tablets and smaller devices */
+}
+
+@media (max-width: 480px) {
+  /* Styles for phones */
+}
